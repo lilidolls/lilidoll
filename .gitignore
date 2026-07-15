@@ -23,3 +23,6 @@ venv/
 *.log
 *.tmp
 .codex-tmp/
+
+# Local high-resolution Telegram source archive
+assets/images/telegram-originals/

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Каталог авторских кукол Lili Miller: фарфоровые BJD, исторические и мифологические персонажи."
+    />
+    <meta name="theme-color" content="#171313" />
+    <title>Каталог работ — Lili Miller</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="catalog.js" defer></script>
+  </head>
+  <body class="inner-page">
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+    <header class="site-header site-header--inner" data-header>
+      <a class="brand" href="index.html#top" aria-label="Lili Miller, на главную">
+        <span class="brand__mark" aria-hidden="true">LM</span>
+        <span class="brand__name">Lili Miller</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        data-menu-toggle
+      >
+        <span></span><span></span>
+        <span class="sr-only">Открыть меню</span>
+      </button>
+
+      <nav class="main-nav" id="main-navigation" aria-label="Основная навигация" data-menu>
+        <a href="catalog.html" aria-current="page">Каталог</a>
+        <a href="index.html#works">Избранное</a>
+        <a href="index.html#artist">Художник</a>
+        <a href="index.html#exhibitions">Выставки</a>
+        <a href="index.html#contact">Контакты</a>
+      </nav>
+
+      <span class="language-label" aria-label="Язык страницы: русский">RU</span>
+    </header>
+
+    <main id="main">
+      <section class="catalog-hero" aria-labelledby="catalog-title">
+        <div class="catalog-hero__orb" aria-hidden="true"></div>
+        <div class="catalog-hero__content">
+          <p class="eyebrow">Архив персонажей · 2019–2026</p>
+          <h1 id="catalog-title">Каталог<br />работ</h1>
+          <p class="catalog-hero__lead">
+            Исторические героини, мифологические существа и маленькие фарфоровые
+            миры — каждая работа существует в единственном экземпляре или малой серии.
+          </p>
+        </div>
+        <div class="catalog-hero__count" aria-live="polite">
+          <span data-catalog-total>—</span>
+          <small>работ в архиве</small>
+        </div>
+      </section>
+
+      <section class="catalog-section" aria-labelledby="catalog-results-title">
+        <form class="catalog-filters" data-catalog-filters>
+          <label class="filter-field filter-field--search">
+            <span>Поиск</span>
+            <input
+              type="search"
+              name="q"
+              placeholder="Название, серия или история"
+              autocomplete="off"
+              data-filter-search
+            />
+          </label>
+
+          <label class="filter-field">
+            <span>Направление</span>
+            <select name="direction" data-filter-direction>
+              <option value="">Все направления</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Серия</span>
+            <select name="series" data-filter-series>
+              <option value="">Все серии</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Год</span>
+            <select name="year" data-filter-year>
+              <option value="">Все годы</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Статус</span>
+            <select name="status" data-filter-status>
+              <option value="">Любой статус</option>
+              <option value="exhibition">На выставке</option>
+              <option value="private">Частная коллекция</option>
+              <option value="archive">Архив</option>
+              <option value="available">Доступна</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Сортировка</span>
+            <select name="sort" data-filter-sort>
+              <option value="curated">Выбор художника</option>
+              <option value="newest">Сначала новые</option>
+              <option value="oldest">Сначала ранние</option>
+              <option value="name">По названию</option>
+            </select>
+          </label>
+
+          <button class="filter-reset" type="button" data-filter-reset>Сбросить всё</button>
+        </form>
+
+        <div class="filter-chips" data-filter-chips aria-label="Активные фильтры"></div>
+
+        <div class="catalog-results-head">
+          <h2 id="catalog-results-title">Работы</h2>
+          <p data-results-summary aria-live="polite">Загрузка каталога…</p>
+        </div>
+
+        <div class="catalog-grid" data-catalog-grid></div>
+        <p class="catalog-status" data-catalog-status role="status">Загрузка каталога…</p>
+        <noscript><p class="catalog-status">Для просмотра каталога включите JavaScript.</p></noscript>
+      </section>
+
+      <section class="inner-contact" aria-labelledby="catalog-contact-title">
+        <p class="eyebrow">Для коллекционеров и галерей</p>
+        <h2 id="catalog-contact-title">Нашли свою<br />историю?</h2>
+        <p>Уточните у художника статус работы, детали заказа или условия выставочного сотрудничества.</p>
+        <a class="contact__button" href="https://t.me/lilimiller" target="_blank" rel="noreferrer">
+          Написать в Telegram <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="inner-footer">
+      <span>© 2026 Lili Miller</span>
+      <a href="https://t.me/lilimillerdoll" target="_blank" rel="noreferrer">Telegram-канал</a>
+      <a href="index.html#top">На главную ↑</a>
+    </footer>
+  </body>
+</html>

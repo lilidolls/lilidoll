@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Авторская кукла Lili Miller — история, материалы и галерея работы." data-description />
+    <meta name="theme-color" content="#f2eee7" />
+    <title>Работа — Lili Miller</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="work.js" defer></script>
+  </head>
+  <body class="inner-page work-view">
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+    <header class="site-header site-header--inner" data-header>
+      <a class="brand" href="index.html#top" aria-label="Lili Miller, на главную">
+        <span class="brand__mark" aria-hidden="true">LM</span>
+        <span class="brand__name">Lili Miller</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        data-menu-toggle
+      >
+        <span></span><span></span>
+        <span class="sr-only">Открыть меню</span>
+      </button>
+
+      <nav class="main-nav" id="main-navigation" aria-label="Основная навигация" data-menu>
+        <a href="catalog.html" aria-current="page">Каталог</a>
+        <a href="index.html#works">Избранное</a>
+        <a href="index.html#artist">Художник</a>
+        <a href="index.html#exhibitions">Выставки</a>
+        <a href="index.html#contact">Контакты</a>
+      </nav>
+
+      <span class="language-label" aria-label="Язык страницы: русский">RU</span>
+    </header>
+
+    <main id="main" class="work-page" data-work-root>
+      <p class="work-loading" role="status">Загрузка работы…</p>
+    </main>
+
+    <footer class="inner-footer">
+      <span>© 2026 Lili Miller</span>
+      <a href="https://t.me/lilimillerdoll" target="_blank" rel="noreferrer">Telegram-канал</a>
+      <a href="catalog.html">Все работы ↑</a>
+    </footer>
+  </body>
+</html>
