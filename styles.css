@@ -13,6 +13,11 @@
   --header-h: 5.75rem;
 }
 
+:root:lang(zh-Hans) {
+  --serif: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", serif;
+  --sans: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -81,8 +86,10 @@ h2 { margin-bottom: 0; font-size: clamp(3rem, 7vw, 7.25rem); line-height: .88; l
   background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform .25s ease;
 }
 .main-nav a:hover::after { transform: scaleX(1); transform-origin: left; }
-.language-toggle { justify-self: end; display: flex; gap: .35rem; padding: 0; border: 0; background: none; cursor: pointer; }
-.language-toggle span:not(.is-active) { opacity: .52; }
+.language-toggle { justify-self: end; display: flex; gap: .35rem; padding: 0; border: 0; background: none; }
+.language-toggle a { opacity: .52; transition: opacity .2s ease; }
+.language-toggle a:hover, .language-toggle a[aria-current="page"] { opacity: 1; }
+.language-toggle span { opacity: .35; }
 .menu-toggle { display: none; }
 
 .site-header--inner {
@@ -153,7 +160,7 @@ h2 { margin-bottom: 0; font-size: clamp(3rem, 7vw, 7.25rem); line-height: .88; l
 }
 .image-shell img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2,.7,.2,1), filter .5s ease; }
 .work-card[data-work="otsuyu"] .work-card__image img,
-.work-card[data-work="caterina"] .work-card__image img,
+.work-card[data-work="caterina-sforza"] .work-card__image img,
 .featured-story__image img { object-position: center top; }
 .work-card:hover img { transform: scale(1.035); filter: saturate(1.06); }
 .work-card__meta { padding-top: 1.2rem; }

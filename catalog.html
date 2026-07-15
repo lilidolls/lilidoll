@@ -14,11 +14,17 @@
     />
     <meta name="theme-color" content="#171313" />
     <link rel="canonical" href="https://lilidoll.ru/catalog.html" />
+    <link rel="alternate" hreflang="ru" href="https://lilidoll.ru/catalog.html" />
+    <link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/catalog.html" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/catalog.html" />
+    <link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/catalog.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Lili Miller" />
     <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
     <meta property="og:url" content="https://lilidoll.ru/catalog.html" />
     <meta property="og:title" content="Каталог авторских кукол — Lili Miller" />
     <meta
@@ -47,7 +53,7 @@
     />
 
     <title>Каталог авторских кукол — Lili Miller</title>
-    <script type="application/ld+json">
+    <script type="application/ld+json" data-catalog-schema>
       {
         "@context": "https://schema.org",
         "@graph": [
@@ -104,13 +110,28 @@
       }
     </script>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110756646', 'ym');
+
+      ym(110756646, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <!-- /Yandex.Metrika counter -->
+    <script src="/analytics.js" defer></script>
     <script src="catalog.js" defer></script>
   </head>
   <body class="inner-page">
-    <a class="skip-link" href="#main">Перейти к содержанию</a>
+    <noscript><div><img src="https://mc.yandex.ru/watch/110756646" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <a class="skip-link" href="#main" data-i18n="skipLink">Перейти к содержанию</a>
 
     <header class="site-header site-header--inner" data-header>
-      <a class="brand" href="index.html#top" aria-label="Lili Miller, на главную">
+      <a class="brand" href="index.html#top" aria-label="Lili Miller, на главную" data-i18n-aria-label="brandHome">
         <span class="brand__mark" aria-hidden="true">LM</span>
         <span class="brand__name">Lili Miller</span>
       </a>
@@ -123,107 +144,112 @@
         data-menu-toggle
       >
         <span></span><span></span>
-        <span class="sr-only">Открыть меню</span>
+        <span class="sr-only" data-i18n="menuOpen">Открыть меню</span>
       </button>
 
-      <nav class="main-nav" id="main-navigation" aria-label="Основная навигация" data-menu>
-        <a href="catalog.html" aria-current="page">Каталог</a>
-        <a href="index.html#works">Избранное</a>
-        <a href="index.html#artist">Художник</a>
-        <a href="index.html#exhibitions">Выставки</a>
-        <a href="index.html#contact">Контакты</a>
+      <nav class="main-nav" id="main-navigation" aria-label="Основная навигация" data-i18n-aria-label="navLabel" data-menu>
+        <a href="catalog.html" aria-current="page" data-i18n="navCatalog">Каталог</a>
+        <a href="index.html#works" data-i18n="navSelected">Избранное</a>
+        <a href="index.html#artist" data-i18n="navArtist">Художник</a>
+        <a href="index.html#exhibitions" data-i18n="navExhibitions">Выставки</a>
+        <a href="index.html#contact" data-i18n="navContact">Контакты</a>
       </nav>
 
-      <span class="language-label" aria-label="Язык страницы: русский">RU</span>
+      <nav class="language-toggle" aria-label="Выбор языка" data-i18n-aria-label="languageNav">
+        <a href="/catalog.html" lang="ru" aria-current="page">RU</a><span>/</span>
+        <a href="/en/catalog.html" lang="en">EN</a><span>/</span>
+        <a href="/zh/catalog.html" lang="zh-Hans">中文</a>
+      </nav>
     </header>
 
     <main id="main">
       <section class="catalog-hero" aria-labelledby="catalog-title">
         <div class="catalog-hero__orb" aria-hidden="true"></div>
         <div class="catalog-hero__content">
-          <p class="eyebrow">Архив персонажей · 2019–2026</p>
-          <h1 id="catalog-title">Каталог<br />работ</h1>
-          <p class="catalog-hero__lead">
+          <p class="eyebrow" data-i18n="eyebrow">Архив персонажей · 2019–2026</p>
+          <h1 id="catalog-title" data-i18n="title">Каталог<br />работ</h1>
+          <p class="catalog-hero__lead" data-i18n="lead">
             Исторические героини, мифологические существа и маленькие фарфоровые
             миры — каждая работа существует в единственном экземпляре или малой серии.
           </p>
         </div>
         <div class="catalog-hero__count" aria-live="polite">
           <span data-catalog-total>—</span>
-          <small>работ в архиве</small>
+          <small data-i18n="countSuffix">работ в архиве</small>
         </div>
       </section>
 
       <section class="catalog-section" aria-labelledby="catalog-results-title">
         <form class="catalog-filters" data-catalog-filters>
           <label class="filter-field filter-field--search">
-            <span>Поиск</span>
+            <span data-i18n="search">Поиск</span>
             <input
               type="search"
               name="q"
               placeholder="Название, серия или история"
+              data-i18n-placeholder="searchPlaceholder"
               autocomplete="off"
               data-filter-search
             />
           </label>
 
           <label class="filter-field">
-            <span>Направление</span>
+            <span data-i18n="direction">Направление</span>
             <select name="direction" data-filter-direction>
-              <option value="">Все направления</option>
+              <option value="" data-i18n="allDirections">Все направления</option>
             </select>
           </label>
 
           <label class="filter-field">
-            <span>Серия</span>
+            <span data-i18n="series">Серия</span>
             <select name="series" data-filter-series>
-              <option value="">Все серии</option>
+              <option value="" data-i18n="allSeries">Все серии</option>
             </select>
           </label>
 
           <label class="filter-field">
-            <span>Год</span>
+            <span data-i18n="year">Год</span>
             <select name="year" data-filter-year>
-              <option value="">Все годы</option>
+              <option value="" data-i18n="allYears">Все годы</option>
             </select>
           </label>
 
           <label class="filter-field">
-            <span>Статус</span>
+            <span data-i18n="status">Статус</span>
             <select name="status" data-filter-status>
-              <option value="">Любой статус</option>
-              <option value="exhibition">На выставке</option>
-              <option value="private">Частная коллекция</option>
-              <option value="archive">Архив</option>
-              <option value="available">Доступна</option>
+              <option value="" data-i18n="anyStatus">Любой статус</option>
+              <option value="exhibition" data-i18n="statusExhibition">На выставке</option>
+              <option value="private" data-i18n="statusPrivate">Частная коллекция</option>
+              <option value="archive" data-i18n="statusArchive">Архив</option>
+              <option value="available" data-i18n="statusAvailable">Доступна</option>
             </select>
           </label>
 
           <label class="filter-field">
-            <span>Сортировка</span>
+            <span data-i18n="sort">Сортировка</span>
             <select name="sort" data-filter-sort>
-              <option value="curated">Выбор художника</option>
-              <option value="newest">Сначала новые</option>
-              <option value="oldest">Сначала ранние</option>
-              <option value="name">По названию</option>
+              <option value="curated" data-i18n="sortCurated">Выбор художника</option>
+              <option value="newest" data-i18n="sortNewest">Сначала новые</option>
+              <option value="oldest" data-i18n="sortOldest">Сначала ранние</option>
+              <option value="name" data-i18n="sortName">По названию</option>
             </select>
           </label>
 
-          <button class="filter-reset" type="button" data-filter-reset>Сбросить всё</button>
+          <button class="filter-reset" type="button" data-filter-reset data-i18n="reset">Сбросить всё</button>
         </form>
 
-        <div class="filter-chips" data-filter-chips aria-label="Активные фильтры"></div>
+        <div class="filter-chips" data-filter-chips aria-label="Активные фильтры" data-i18n-aria-label="activeFilters"></div>
 
         <div class="catalog-results-head">
-          <h2 id="catalog-results-title">Работы</h2>
-          <p data-results-summary aria-live="polite">Загрузка каталога…</p>
+          <h2 id="catalog-results-title" data-i18n="works">Работы</h2>
+          <p data-results-summary aria-live="polite" data-i18n="loading">Загрузка каталога…</p>
         </div>
 
         <div class="catalog-grid" data-catalog-grid></div>
-        <p class="catalog-status" data-catalog-status role="status">Загрузка каталога…</p>
+        <p class="catalog-status" data-catalog-status role="status" data-i18n="loading">Загрузка каталога…</p>
         <noscript>
           <div class="catalog-status">
-            <p>Фильтры требуют JavaScript. Откройте страницу выбранной работы:</p>
+            <p data-i18n="noScript">Фильтры требуют JavaScript. Откройте страницу выбранной работы:</p>
             <ul>
               <li><a href="works/otsuyu/">Оцую</a></li>
               <li><a href="works/lucrezia-borgia/">Лукреция Борджиа</a></li>
@@ -243,10 +269,10 @@
       </section>
 
       <section class="inner-contact" aria-labelledby="catalog-contact-title">
-        <p class="eyebrow">Для коллекционеров и галерей</p>
-        <h2 id="catalog-contact-title">Нашли свою<br />историю?</h2>
-        <p>Уточните у художника статус работы, детали заказа или условия выставочного сотрудничества.</p>
-        <a class="contact__button" href="https://t.me/lilimiller" target="_blank" rel="noreferrer">
+        <p class="eyebrow" data-i18n="contactLabel">Для коллекционеров и галерей</p>
+        <h2 id="catalog-contact-title" data-i18n="contactTitle">Нашли свою<br />историю?</h2>
+        <p data-i18n="contactBody">Уточните у художника статус работы, детали заказа или условия выставочного сотрудничества.</p>
+        <a class="contact__button" href="https://t.me/lilimiller" target="_blank" rel="noreferrer" data-i18n="contactButton">
           Написать в Telegram <span aria-hidden="true">↗</span>
         </a>
       </section>
@@ -254,8 +280,8 @@
 
     <footer class="inner-footer">
       <span>© 2026 Lili Miller</span>
-      <a href="https://t.me/lilimillerdoll" target="_blank" rel="noreferrer">Telegram-канал</a>
-      <a href="index.html#top">На главную ↑</a>
+      <a href="https://t.me/lilimillerdoll" target="_blank" rel="noreferrer" data-i18n="telegramChannel">Telegram-канал</a>
+      <a href="index.html#top" data-i18n="home">На главную ↑</a>
     </footer>
   </body>
 </html>

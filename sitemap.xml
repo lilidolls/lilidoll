@@ -1,23 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lilidoll.ru/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/232.webp</image:loc>
-      <image:caption>Оцую — авторская кукла Lili Miller</image:caption>
+      <image:caption>Оцую — авторская кукла Lili Miller в красном образе</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/232.webp</image:loc>
+      <image:caption>Otsuyu, an art doll by Lili Miller dressed in red</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/232.webp</image:loc>
+      <image:caption>Lili Miller创作的阿露艺术人偶，身着红色服装</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://lilidoll.ru/catalog.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/catalog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/catalog.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/catalog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/catalog.html" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/social-preview.jpg</image:loc>
-      <image:caption>Каталог авторских кукол Lili Miller</image:caption>
+      <image:caption>Каталог авторских кукол — Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/en/catalog.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/catalog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/catalog.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/catalog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/catalog.html" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/social-preview.jpg</image:loc>
+      <image:caption>Art doll catalogue — Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/catalog.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/catalog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/catalog.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/catalog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/catalog.html" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/social-preview.jpg</image:loc>
+      <image:caption>艺术人偶作品目录 — Lili Miller</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://lilidoll.ru/works/otsuyu/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/otsuyu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/otsuyu/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/otsuyu/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/otsuyu/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/232.webp</image:loc>
@@ -25,7 +85,35 @@
     </image:image>
   </url>
   <url>
+    <loc>https://lilidoll.ru/en/works/otsuyu/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/otsuyu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/otsuyu/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/otsuyu/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/otsuyu/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/232.webp</image:loc>
+      <image:caption>Otsuyu, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/otsuyu/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/otsuyu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/otsuyu/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/otsuyu/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/otsuyu/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/232.webp</image:loc>
+      <image:caption>阿露，Lili Miller艺术人偶</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lilidoll.ru/works/lucrezia-borgia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/lucrezia-borgia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/lucrezia-borgia/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/lucrezia-borgia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/lucrezia-borgia/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/221.webp</image:loc>
@@ -33,7 +121,35 @@
     </image:image>
   </url>
   <url>
+    <loc>https://lilidoll.ru/en/works/lucrezia-borgia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/lucrezia-borgia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/lucrezia-borgia/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/lucrezia-borgia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/lucrezia-borgia/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/221.webp</image:loc>
+      <image:caption>Lucrezia Borgia, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/lucrezia-borgia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/lucrezia-borgia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/lucrezia-borgia/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/lucrezia-borgia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/lucrezia-borgia/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/221.webp</image:loc>
+      <image:caption>卢克雷齐娅·波吉亚，Lili Miller艺术人偶</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lilidoll.ru/works/caterina-sforza/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/caterina-sforza/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/caterina-sforza/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/caterina-sforza/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/caterina-sforza/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/90.webp</image:loc>
@@ -41,7 +157,35 @@
     </image:image>
   </url>
   <url>
+    <loc>https://lilidoll.ru/en/works/caterina-sforza/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/caterina-sforza/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/caterina-sforza/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/caterina-sforza/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/caterina-sforza/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/90.webp</image:loc>
+      <image:caption>Caterina Sforza, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/caterina-sforza/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/caterina-sforza/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/caterina-sforza/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/caterina-sforza/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/caterina-sforza/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/90.webp</image:loc>
+      <image:caption>卡特琳娜·斯福尔扎，Lili Miller艺术人偶</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lilidoll.ru/works/contessina-de-bardi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/contessina-de-bardi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/contessina-de-bardi/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/contessina-de-bardi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/contessina-de-bardi/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/78.webp</image:loc>
@@ -49,7 +193,35 @@
     </image:image>
   </url>
   <url>
+    <loc>https://lilidoll.ru/en/works/contessina-de-bardi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/contessina-de-bardi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/contessina-de-bardi/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/contessina-de-bardi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/contessina-de-bardi/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/78.webp</image:loc>
+      <image:caption>Contessina de&#x27; Bardi, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/contessina-de-bardi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/contessina-de-bardi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/contessina-de-bardi/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/contessina-de-bardi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/contessina-de-bardi/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/78.webp</image:loc>
+      <image:caption>康特西娜·德·巴尔迪，Lili Miller艺术人偶</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lilidoll.ru/works/princess-olga/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/princess-olga/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/princess-olga/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/princess-olga/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/princess-olga/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/149.webp</image:loc>
@@ -57,7 +229,35 @@
     </image:image>
   </url>
   <url>
+    <loc>https://lilidoll.ru/en/works/princess-olga/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/princess-olga/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/princess-olga/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/princess-olga/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/princess-olga/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/149.webp</image:loc>
+      <image:caption>Princess Olga, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/princess-olga/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/princess-olga/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/princess-olga/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/princess-olga/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/princess-olga/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/149.webp</image:loc>
+      <image:caption>奥尔加女大公，Lili Miller艺术人偶</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lilidoll.ru/works/elena-glinskaya/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/elena-glinskaya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/elena-glinskaya/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/elena-glinskaya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/elena-glinskaya/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/155.webp</image:loc>
@@ -65,7 +265,35 @@
     </image:image>
   </url>
   <url>
+    <loc>https://lilidoll.ru/en/works/elena-glinskaya/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/elena-glinskaya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/elena-glinskaya/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/elena-glinskaya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/elena-glinskaya/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/155.webp</image:loc>
+      <image:caption>Elena Glinskaya, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/elena-glinskaya/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/elena-glinskaya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/elena-glinskaya/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/elena-glinskaya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/elena-glinskaya/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/155.webp</image:loc>
+      <image:caption>叶莲娜·格林斯卡娅，Lili Miller艺术人偶</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lilidoll.ru/works/maria-godunova/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/maria-godunova/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/maria-godunova/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/maria-godunova/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/maria-godunova/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/167.webp</image:loc>
@@ -73,7 +301,35 @@
     </image:image>
   </url>
   <url>
+    <loc>https://lilidoll.ru/en/works/maria-godunova/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/maria-godunova/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/maria-godunova/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/maria-godunova/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/maria-godunova/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/167.webp</image:loc>
+      <image:caption>Maria Godunova, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/maria-godunova/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/maria-godunova/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/maria-godunova/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/maria-godunova/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/maria-godunova/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/167.webp</image:loc>
+      <image:caption>玛丽亚·戈杜诺娃，Lili Miller艺术人偶</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lilidoll.ru/works/kitsune/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/kitsune/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/kitsune/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/kitsune/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/kitsune/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/179.webp</image:loc>
@@ -81,7 +337,35 @@
     </image:image>
   </url>
   <url>
+    <loc>https://lilidoll.ru/en/works/kitsune/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/kitsune/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/kitsune/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/kitsune/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/kitsune/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/179.webp</image:loc>
+      <image:caption>Kitsune, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/kitsune/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/kitsune/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/kitsune/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/kitsune/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/kitsune/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/179.webp</image:loc>
+      <image:caption>狐仙，Lili Miller艺术人偶</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lilidoll.ru/works/follow-the-white-rabbit/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/follow-the-white-rabbit/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/follow-the-white-rabbit/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/follow-the-white-rabbit/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/follow-the-white-rabbit/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/172.webp</image:loc>
@@ -89,7 +373,35 @@
     </image:image>
   </url>
   <url>
+    <loc>https://lilidoll.ru/en/works/follow-the-white-rabbit/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/follow-the-white-rabbit/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/follow-the-white-rabbit/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/follow-the-white-rabbit/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/follow-the-white-rabbit/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/172.webp</image:loc>
+      <image:caption>Follow the White Rabbit, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/follow-the-white-rabbit/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/follow-the-white-rabbit/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/follow-the-white-rabbit/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/follow-the-white-rabbit/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/follow-the-white-rabbit/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/172.webp</image:loc>
+      <image:caption>跟随白兔，Lili Miller艺术人偶</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lilidoll.ru/works/sleeping-demon/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/sleeping-demon/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/sleeping-demon/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/sleeping-demon/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/sleeping-demon/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/54.webp</image:loc>
@@ -97,7 +409,35 @@
     </image:image>
   </url>
   <url>
+    <loc>https://lilidoll.ru/en/works/sleeping-demon/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/sleeping-demon/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/sleeping-demon/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/sleeping-demon/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/sleeping-demon/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/54.webp</image:loc>
+      <image:caption>Sleeping Demon, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/sleeping-demon/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/sleeping-demon/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/sleeping-demon/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/sleeping-demon/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/sleeping-demon/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/54.webp</image:loc>
+      <image:caption>沉睡的恶魔，Lili Miller艺术人偶</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lilidoll.ru/works/little-porcelain/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/little-porcelain/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/little-porcelain/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/little-porcelain/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/little-porcelain/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/125.webp</image:loc>
@@ -105,11 +445,63 @@
     </image:image>
   </url>
   <url>
+    <loc>https://lilidoll.ru/en/works/little-porcelain/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/little-porcelain/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/little-porcelain/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/little-porcelain/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/little-porcelain/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/125.webp</image:loc>
+      <image:caption>Little Porcelain, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/little-porcelain/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/little-porcelain/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/little-porcelain/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/little-porcelain/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/little-porcelain/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/125.webp</image:loc>
+      <image:caption>小瓷偶，Lili Miller艺术人偶</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lilidoll.ru/works/teddy-circus/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/teddy-circus/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/teddy-circus/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/teddy-circus/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/teddy-circus/" />
     <lastmod>2026-07-15</lastmod>
     <image:image>
       <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/10.webp</image:loc>
       <image:caption>Цирк Teddy — авторская кукла Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/en/works/teddy-circus/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/teddy-circus/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/teddy-circus/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/teddy-circus/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/teddy-circus/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/10.webp</image:loc>
+      <image:caption>Teddy Circus, an art doll by Lili Miller</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lilidoll.ru/zh/works/teddy-circus/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lilidoll.ru/works/teddy-circus/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/works/teddy-circus/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/works/teddy-circus/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/works/teddy-circus/" />
+    <lastmod>2026-07-15</lastmod>
+    <image:image>
+      <image:loc>https://lilidoll.ru/assets/images/telegram-web/lilimillerdoll/10.webp</image:loc>
+      <image:caption>泰迪马戏团，Lili Miller艺术人偶</image:caption>
     </image:image>
   </url>
 </urlset>
