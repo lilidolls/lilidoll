@@ -135,7 +135,7 @@ function createCard(work, index) {
 
   const link = document.createElement("a");
   link.className = "catalog-card__link";
-  link.href = `work.html?slug=${encodeURIComponent(work.slug)}`;
+  link.href = `works/${encodeURIComponent(work.slug)}/`;
   link.setAttribute("aria-label", `${localized(work.title)} — открыть работу`);
 
   const imageWrap = document.createElement("div");

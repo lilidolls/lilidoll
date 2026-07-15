@@ -29,6 +29,9 @@ python3 -m http.server 4173
 - `styles.css` — адаптивная дизайн-система и анимации;
 - `script.js` — мобильное меню, появление секций, карточки работ и RU/EN;
 - `data/works.json` — структурированные данные о работах;
+- `works/*/index.html` — индексируемые страницы работ с индивидуальными SEO-метаданными;
+- `sitemap.xml` и `robots.txt` — карта сайта и правила обхода поисковыми роботами;
+- `assets/images/social-preview.jpg` — превью 1200×630 для Open Graph и X Cards;
 - `content/content-inventory.md` — черновой реестр коллекций и работ;
 - `content/telegram-media-catalog.md` — каталог фотографий с подписями Telegram-постов;
 - `research/benchmark-and-design-directions.md` — исследование референсов;
@@ -37,6 +40,7 @@ python3 -m http.server 4173
 - `data/telegram-media-manifest.json` — машиночитаемый индекс web-медиа;
 - `tools/export_telegram_images.py` — повторяемая выгрузка с прогрессбаром.
 - `tools/optimize_telegram_images.py` — WebP-конвертация с ограничением размера и прогрессбаром.
+- `tools/generate_seo_pages.py` — генерация страниц работ и sitemap из `data/works.json`.
 
 ## Технологии
 
@@ -69,3 +73,9 @@ python3 tools/optimize_telegram_images.py
 ```
 
 По умолчанию изображения конвертируются в WebP с качеством 82, длинной стороной не более 2000 px и без EXIF-метаданных. Оригиналы остаются локально и не попадают в историю Git.
+
+После изменения `data/works.json` обновите индексируемые страницы и карту сайта:
+
+```bash
+python3 tools/generate_seo_pages.py
+```
