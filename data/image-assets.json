@@ -1,0 +1,2206 @@
+{
+  "generatedAt": "2026-07-15",
+  "profile": {
+    "responsiveFormat": "webp",
+    "responsiveQuality": 78,
+    "responsiveWidths": [
+      480,
+      960,
+      1440
+    ],
+    "socialFormat": "jpeg",
+    "socialQuality": 89,
+    "socialSize": [
+      1200,
+      630
+    ]
+  },
+  "images": {
+    "assets/images/telegram-web/douls-for-soul-site/633525.webp": {
+      "width": 1239,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/douls-for-soul-site/633525-480.webp",
+          "width": 480,
+          "height": 775,
+          "bytes": 22414
+        },
+        {
+          "path": "assets/images/responsive/douls-for-soul-site/633525-960.webp",
+          "width": 960,
+          "height": 1550,
+          "bytes": 51508
+        },
+        {
+          "path": "assets/images/telegram-web/douls-for-soul-site/633525.webp",
+          "width": 1239,
+          "height": 2000,
+          "bytes": 85334
+        }
+      ]
+    },
+    "assets/images/telegram-web/douls-for-soul-site/633526.webp": {
+      "width": 1125,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/douls-for-soul-site/633526-480.webp",
+          "width": 480,
+          "height": 853,
+          "bytes": 17800
+        },
+        {
+          "path": "assets/images/responsive/douls-for-soul-site/633526-960.webp",
+          "width": 960,
+          "height": 1707,
+          "bytes": 40626
+        },
+        {
+          "path": "assets/images/telegram-web/douls-for-soul-site/633526.webp",
+          "width": 1125,
+          "height": 2000,
+          "bytes": 61824
+        }
+      ]
+    },
+    "assets/images/telegram-web/douls-for-soul-site/633531.webp": {
+      "width": 1156,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/douls-for-soul-site/633531-480.webp",
+          "width": 480,
+          "height": 830,
+          "bytes": 31912
+        },
+        {
+          "path": "assets/images/responsive/douls-for-soul-site/633531-960.webp",
+          "width": 960,
+          "height": 1661,
+          "bytes": 88874
+        },
+        {
+          "path": "assets/images/telegram-web/douls-for-soul-site/633531.webp",
+          "width": 1156,
+          "height": 2000,
+          "bytes": 147904
+        }
+      ]
+    },
+    "assets/images/telegram-web/douls-for-soul-site/633537.webp": {
+      "width": 1180,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/douls-for-soul-site/633537-480.webp",
+          "width": 480,
+          "height": 814,
+          "bytes": 56050
+        },
+        {
+          "path": "assets/images/responsive/douls-for-soul-site/633537-960.webp",
+          "width": 960,
+          "height": 1627,
+          "bytes": 148462
+        },
+        {
+          "path": "assets/images/telegram-web/douls-for-soul-site/633537.webp",
+          "width": 1180,
+          "height": 2000,
+          "bytes": 237256
+        }
+      ]
+    },
+    "assets/images/telegram-web/douls-for-soul-site/633595.webp": {
+      "width": 720,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/douls-for-soul-site/633595-480.webp",
+          "width": 480,
+          "height": 853,
+          "bytes": 96648
+        },
+        {
+          "path": "assets/images/telegram-web/douls-for-soul-site/633595.webp",
+          "width": 720,
+          "height": 1280,
+          "bytes": 269904
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/10.webp": {
+      "width": 1280,
+      "height": 1156,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/10-480.webp",
+          "width": 480,
+          "height": 434,
+          "bytes": 11612
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/10-960.webp",
+          "width": 960,
+          "height": 867,
+          "bytes": 37150
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/10.webp",
+          "width": 1280,
+          "height": 1156,
+          "bytes": 83778
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/11.webp": {
+      "width": 1280,
+      "height": 1198,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/11-480.webp",
+          "width": 480,
+          "height": 449,
+          "bytes": 18380
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/11-960.webp",
+          "width": 960,
+          "height": 898,
+          "bytes": 55424
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/11.webp",
+          "width": 1280,
+          "height": 1198,
+          "bytes": 122740
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/12.webp": {
+      "width": 1070,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/12-480.webp",
+          "width": 480,
+          "height": 574,
+          "bytes": 13846
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/12-960.webp",
+          "width": 960,
+          "height": 1148,
+          "bytes": 43746
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/12.webp",
+          "width": 1070,
+          "height": 1280,
+          "bytes": 82544
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/125.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/125-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 12806
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/125-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 41074
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/125.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 53890
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/126.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/126-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 15364
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/126-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 43572
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/126.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 54162
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/127.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/127-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 13450
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/127-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 48418
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/127.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 60420
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/128.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/128-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 12786
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/128-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 58582
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/128.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 74024
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/129.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/129-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 11098
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/129-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 46946
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/129.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 60810
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/13.webp": {
+      "width": 1280,
+      "height": 1188,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/13-480.webp",
+          "width": 480,
+          "height": 446,
+          "bytes": 17606
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/13-960.webp",
+          "width": 960,
+          "height": 891,
+          "bytes": 64788
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/13.webp",
+          "width": 1280,
+          "height": 1188,
+          "bytes": 172212
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/130.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/130-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 22234
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/130-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 56478
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/130.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 78070
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/131.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/131-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 9686
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/131-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 38032
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/131.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 51284
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/132.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/132-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 14220
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/132-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 40870
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/132.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 53518
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/133.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/133-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 10346
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/133-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 25622
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/133.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 33708
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/134.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/134-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 9398
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/134-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 24476
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/134.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 31506
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/135.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/135-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 8460
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/135-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 21622
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/135.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 29164
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/136.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/136-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 9866
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/136-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 27224
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/136.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 37488
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/14.webp": {
+      "width": 1280,
+      "height": 970,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/14-480.webp",
+          "width": 480,
+          "height": 364,
+          "bytes": 17520
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/14-960.webp",
+          "width": 960,
+          "height": 728,
+          "bytes": 46622
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/14.webp",
+          "width": 1280,
+          "height": 970,
+          "bytes": 96426
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/149.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/149-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 13318
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/149.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 37614
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/15.webp": {
+      "width": 1280,
+      "height": 1225,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/15-480.webp",
+          "width": 480,
+          "height": 459,
+          "bytes": 13508
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/15-960.webp",
+          "width": 960,
+          "height": 919,
+          "bytes": 36436
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/15.webp",
+          "width": 1280,
+          "height": 1225,
+          "bytes": 87742
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/150.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/150-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 22306
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/150.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 61752
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/151.webp": {
+      "width": 1280,
+      "height": 853,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/151-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 9376
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/151-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 24958
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/151.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 45684
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/152.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/152-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 29882
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/152.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 84428
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/153.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/153-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 13504
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/153.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 38338
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/155.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/155-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 22542
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/155.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 62204
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/156.webp": {
+      "width": 1280,
+      "height": 853,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/156-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 10276
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/156-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 28510
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/156.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 54138
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/157.webp": {
+      "width": 1280,
+      "height": 853,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/157-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 10708
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/157-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 29936
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/157.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 57566
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/158.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/158-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 19552
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/158.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 55556
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/159.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/159-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 12366
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/159.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 36688
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/160.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/160-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 11708
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/160.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 34444
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/162.webp": {
+      "width": 1280,
+      "height": 853,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/162-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 5400
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/162-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 17524
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/162.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 35132
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/163.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/163-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 13074
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/163.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 41118
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/164.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/164-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 12448
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/164.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 40276
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/165.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/165-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 14886
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/165.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 48386
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/166.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/166-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 16296
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/166.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 52224
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/167.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/167-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 31478
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/167.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 87994
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/168.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/168-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 32036
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/168.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 88260
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/169.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/169-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 32294
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/169.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 93472
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/170.webp": {
+      "width": 1280,
+      "height": 853,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/170-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 13544
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/170-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 41450
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/170.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 76582
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/171.webp": {
+      "width": 830,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/171-480.webp",
+          "width": 480,
+          "height": 740,
+          "bytes": 34098
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/171.webp",
+          "width": 830,
+          "height": 1280,
+          "bytes": 181640
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/172.webp": {
+      "width": 964,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/172-480.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 16956
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/172-960.webp",
+          "width": 960,
+          "height": 1275,
+          "bytes": 49144
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/172.webp",
+          "width": 964,
+          "height": 1280,
+          "bytes": 78842
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/173.webp": {
+      "width": 851,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/173-480.webp",
+          "width": 480,
+          "height": 722,
+          "bytes": 15020
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/173.webp",
+          "width": 851,
+          "height": 1280,
+          "bytes": 95366
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/179.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/179-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 22296
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/179.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 86828
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/180.webp": {
+      "width": 854,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/180-480.webp",
+          "width": 480,
+          "height": 719,
+          "bytes": 11608
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/180.webp",
+          "width": 854,
+          "height": 1280,
+          "bytes": 33162
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/181.webp": {
+      "width": 1280,
+      "height": 852,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/181-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 6906
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/181-960.webp",
+          "width": 960,
+          "height": 639,
+          "bytes": 17634
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/181.webp",
+          "width": 1280,
+          "height": 852,
+          "bytes": 37394
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/182.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/182-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 19058
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/182.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 66392
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/183.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/183-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 13710
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/183.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 44234
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/184.webp": {
+      "width": 1280,
+      "height": 852,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/184-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 8730
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/184-960.webp",
+          "width": 960,
+          "height": 639,
+          "bytes": 25830
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/184.webp",
+          "width": 1280,
+          "height": 852,
+          "bytes": 56588
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/185.webp": {
+      "width": 1280,
+      "height": 852,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/185-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 25588
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/185-960.webp",
+          "width": 960,
+          "height": 639,
+          "bytes": 84246
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/185.webp",
+          "width": 1280,
+          "height": 852,
+          "bytes": 159172
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/190.webp": {
+      "width": 858,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/190-480.webp",
+          "width": 480,
+          "height": 716,
+          "bytes": 16230
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/190.webp",
+          "width": 858,
+          "height": 1280,
+          "bytes": 77974
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/191.webp": {
+      "width": 853,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/191-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 15908
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/191.webp",
+          "width": 853,
+          "height": 1280,
+          "bytes": 53086
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/221.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/221-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 45476
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/221-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 174608
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/221-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 329648
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/221.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 430574
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/222.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/222-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 30592
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/222-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 92314
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/222-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 163818
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/222.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 219774
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/223.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/223-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 89186
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/223-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 325850
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/223-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 568554
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/223.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 698212
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/224.webp": {
+      "width": 1499,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/224-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 40496
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/224-960.webp",
+          "width": 960,
+          "height": 1281,
+          "bytes": 155634
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/224-1440.webp",
+          "width": 1440,
+          "height": 1921,
+          "bytes": 300254
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/224.webp",
+          "width": 1499,
+          "height": 2000,
+          "bytes": 399556
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/225.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/225-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 30032
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/225-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 92610
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/225-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 166448
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/225.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 222800
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/226.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/226-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 42140
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/226-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 154408
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/226-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 316130
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/226.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 429610
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/227.webp": {
+      "width": 1530,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/227-480.webp",
+          "width": 480,
+          "height": 627,
+          "bytes": 38086
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/227-960.webp",
+          "width": 960,
+          "height": 1255,
+          "bytes": 121662
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/227-1440.webp",
+          "width": 1440,
+          "height": 1882,
+          "bytes": 216498
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/227.webp",
+          "width": 1530,
+          "height": 2000,
+          "bytes": 306280
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/228.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/228-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 46612
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/228-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 135850
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/228-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 227390
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/228.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 296200
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/229.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/229-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 46100
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/229-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 148422
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/229-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 264748
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/229.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 367630
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/230.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/230-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 20100
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/230-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 59586
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/230-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 105070
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/230.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 155664
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/231.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/231-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 21742
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/231-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 80086
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/231-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 158426
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/231.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 231284
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/232.webp": {
+      "width": 2000,
+      "height": 1795,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/232-480.webp",
+          "width": 480,
+          "height": 431,
+          "bytes": 16940
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/232-960.webp",
+          "width": 960,
+          "height": 862,
+          "bytes": 54660
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/232-1440.webp",
+          "width": 1440,
+          "height": 1292,
+          "bytes": 107120
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/232.webp",
+          "width": 2000,
+          "height": 1795,
+          "bytes": 250540
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/233.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/233-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 21028
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/233-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 71928
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/233-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 137018
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/233.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 198214
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/234.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/234-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 16276
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/234-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 50886
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/234-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 90798
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/234.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 122402
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/235.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/235-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 58914
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/235-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 233222
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/235-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 402912
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/235.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 520504
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/236.webp": {
+      "width": 1500,
+      "height": 2000,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/236-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 39496
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/236-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 136246
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/236-1440.webp",
+          "width": 1440,
+          "height": 1920,
+          "bytes": 235636
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/236.webp",
+          "width": 1500,
+          "height": 2000,
+          "bytes": 317042
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/54.webp": {
+      "width": 1280,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/54-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 21906
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/54-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 61924
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/54.webp",
+          "width": 1280,
+          "height": 1280,
+          "bytes": 114702
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/55.webp": {
+      "width": 1280,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/55-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 48566
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/55-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 187876
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/55.webp",
+          "width": 1280,
+          "height": 1280,
+          "bytes": 343000
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/56.webp": {
+      "width": 1097,
+      "height": 1097,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/56-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 27166
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/56-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 86756
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/56.webp",
+          "width": 1097,
+          "height": 1097,
+          "bytes": 135052
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/57.webp": {
+      "width": 1280,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/57-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 24886
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/57-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 63282
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/57.webp",
+          "width": 1280,
+          "height": 1280,
+          "bytes": 114300
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/58.webp": {
+      "width": 720,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/58-480.webp",
+          "width": 480,
+          "height": 853,
+          "bytes": 45182
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/58.webp",
+          "width": 720,
+          "height": 1280,
+          "bytes": 131698
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/78.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/78-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 28094
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/78.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 73584
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/79.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/79-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 27890
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/79.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 72032
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/80.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/80-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 14610
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/80.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 50718
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/81.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/81-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 11340
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/81.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 31036
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/82.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/82-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 10150
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/82.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 27210
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/83.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/83-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 11726
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/83.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 36972
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/84.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/84-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 22142
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/84.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 73738
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/85.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/85-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 17116
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/85.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 65788
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/86.webp": {
+      "width": 799,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/86-480.webp",
+          "width": 480,
+          "height": 769,
+          "bytes": 15876
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/86.webp",
+          "width": 799,
+          "height": 1280,
+          "bytes": 44530
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/90.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/90-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 33284
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/90.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 95102
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/91.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/91-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 28274
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/91.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 83472
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/92.webp": {
+      "width": 1280,
+      "height": 852,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/92-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 8412
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/92-960.webp",
+          "width": 960,
+          "height": 639,
+          "bytes": 24456
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/92.webp",
+          "width": 1280,
+          "height": 852,
+          "bytes": 50042
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/93.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/93-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 30740
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/93.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 85924
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/94.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/94-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 12254
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/94.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 36004
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/95.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/95-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 12020
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/95.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 33394
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/96.webp": {
+      "width": 1280,
+      "height": 852,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/96-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 5792
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/96-960.webp",
+          "width": 960,
+          "height": 639,
+          "bytes": 15138
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/96.webp",
+          "width": 1280,
+          "height": 852,
+          "bytes": 28350
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/97.webp": {
+      "width": 852,
+      "height": 1280,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/97-480.webp",
+          "width": 480,
+          "height": 721,
+          "bytes": 13234
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/97.webp",
+          "width": 852,
+          "height": 1280,
+          "bytes": 37956
+        }
+      ]
+    },
+    "assets/images/telegram-web/lilimillerdoll/98.webp": {
+      "width": 1280,
+      "height": 852,
+      "variants": [
+        {
+          "path": "assets/images/responsive/lilimillerdoll/98-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 5640
+        },
+        {
+          "path": "assets/images/responsive/lilimillerdoll/98-960.webp",
+          "width": 960,
+          "height": 639,
+          "bytes": 15212
+        },
+        {
+          "path": "assets/images/telegram-web/lilimillerdoll/98.webp",
+          "width": 1280,
+          "height": 852,
+          "bytes": 29084
+        }
+      ]
+    }
+  },
+  "socialPreviews": {
+    "otsuyu": {
+      "path": "assets/images/social/works/otsuyu.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 93716
+    },
+    "lucrezia-borgia": {
+      "path": "assets/images/social/works/lucrezia-borgia.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 97341
+    },
+    "caterina-sforza": {
+      "path": "assets/images/social/works/caterina-sforza.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 77203
+    },
+    "contessina-de-bardi": {
+      "path": "assets/images/social/works/contessina-de-bardi.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 61241
+    },
+    "princess-olga": {
+      "path": "assets/images/social/works/princess-olga.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 45024
+    },
+    "elena-glinskaya": {
+      "path": "assets/images/social/works/elena-glinskaya.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 59875
+    },
+    "maria-godunova": {
+      "path": "assets/images/social/works/maria-godunova.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 64639
+    },
+    "kitsune": {
+      "path": "assets/images/social/works/kitsune.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 62767
+    },
+    "follow-the-white-rabbit": {
+      "path": "assets/images/social/works/follow-the-white-rabbit.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 61229
+    },
+    "sleeping-demon": {
+      "path": "assets/images/social/works/sleeping-demon.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 84196
+    },
+    "little-porcelain": {
+      "path": "assets/images/social/works/little-porcelain.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 43045
+    },
+    "teddy-circus": {
+      "path": "assets/images/social/works/teddy-circus.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 69021
+    }
+  }
+}

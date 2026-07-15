@@ -31,9 +31,12 @@ python3 -m http.server 4173
 - `analytics.js` — отправка важных событий в счётчик Яндекс Метрики № 110756646;
 - `data/i18n.json` — интерфейсные тексты и SEO-метаданные на русском, английском и упрощённом китайском;
 - `data/works.json` — структурированные данные о работах;
+- `data/image-assets.json` — размеры, `srcset`-варианты и индивидуальные social preview работ;
 - `works/*/index.html` — индексируемые страницы работ с индивидуальными SEO-метаданными;
 - `sitemap.xml` и `robots.txt` — карта сайта и правила обхода поисковыми роботами;
 - `assets/images/social-preview.jpg` — превью 1200×630 для Open Graph и X Cards;
+- `assets/images/social/works/` — индивидуальные превью 1200×630 для страниц работ;
+- `assets/images/responsive/` — адаптивные WebP-варианты используемых фотографий;
 - `content/content-inventory.md` — черновой реестр коллекций и работ;
 - `content/telegram-media-catalog.md` — каталог фотографий с подписями Telegram-постов;
 - `research/benchmark-and-design-directions.md` — исследование референсов;
@@ -42,7 +45,10 @@ python3 -m http.server 4173
 - `data/telegram-media-manifest.json` — машиночитаемый индекс web-медиа;
 - `tools/export_telegram_images.py` — повторяемая выгрузка с прогрессбаром.
 - `tools/optimize_telegram_images.py` — WebP-конвертация с ограничением размера и прогрессбаром.
+- `tools/generate_image_assets.py` — генерация адаптивных размеров и social preview.
 - `tools/generate_seo_pages.py` — генерация локализованных страниц работ, английской и китайской версий сайта и sitemap.
+- `tools/validate_site.py` — проверка страниц, ссылок, метаданных, изображений и sitemap.
+- `PROJECT_TASKS.md` — отложенные контентные задачи проекта.
 
 ## Технологии
 
@@ -76,13 +82,17 @@ python3 tools/optimize_telegram_images.py
 
 По умолчанию изображения конвертируются в WebP с качеством 82, длинной стороной не более 2000 px и без EXIF-метаданных. Оригиналы остаются локально и не попадают в историю Git.
 
-После изменения `data/works.json` обновите индексируемые страницы и карту сайта:
+После изменения `data/works.json` или фотографий сначала обновите адаптивные изображения, затем индексируемые страницы и карту сайта:
 
 ```bash
+python3 tools/generate_image_assets.py
 python3 tools/generate_seo_pages.py
+python3 tools/validate_site.py
 ```
 
-Скрипт создаёт русские страницы работ в `/works/`, английскую версию в `/en/`, китайскую версию в `/zh/` и обновляет многоязычный `sitemap.xml`. После изменения контента в `data/works.json` или переводов в `data/i18n.json` запустите его повторно.
+Для генераторов требуется Pillow из `requirements-tools.txt`. Первый скрипт создаёт `srcset`-варианты только для используемых изображений и 12 индивидуальных карточек Open Graph. Второй создаёт русские страницы работ в `/works/`, английскую версию в `/en/`, китайскую версию в `/zh/` и обновляет многоязычный `sitemap.xml`.
+
+Workflow `.github/workflows/site-quality.yml` запускает эти проверки для каждого pull request и push в `main`, а также убеждается, что сгенерированные страницы закоммичены в актуальном состоянии.
 
 ## Яндекс Метрика
 
@@ -92,6 +102,7 @@ python3 tools/generate_seo_pages.py
 - `catalog_open` — переход в каталог;
 - `work_open` — открытие отдельной страницы работы;
 - `work_preview` — открытие быстрого просмотра на главной;
+- `inquiry_start` — переход к подготовленному запросу о работе или индивидуальном заказе;
 - `catalog_filter`, `catalog_search`, `catalog_sort`, `catalog_reset` — работа с каталогом;
 - `contact_telegram` — переход к личному контакту художника;
 - `telegram_channel` — переход в публичный канал;

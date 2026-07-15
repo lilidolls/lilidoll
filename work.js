@@ -11,6 +11,7 @@ const LANGUAGE = document.documentElement.lang === "zh-Hans"
 const LANGUAGE_PREFIX = LANGUAGE === "ru" ? "" : `/${LANGUAGE}`;
 
 let ui = null;
+let imageAssets = { images: {} };
 
 function format(template, values) {
   return Object.entries(values).reduce(
@@ -40,6 +41,27 @@ function catalogPath() {
 
 function workPath(slug) {
   return `${LANGUAGE_PREFIX}/works/${encodeURIComponent(slug)}/`;
+}
+
+function applyResponsiveImage(image, path, sizes) {
+  const metadata = imageAssets.images?.[path];
+  if (!metadata) return;
+  image.width = metadata.width;
+  image.height = metadata.height;
+  image.srcset = metadata.variants
+    .map((variant) => `${rootPath(variant.path)} ${variant.width}w`)
+    .join(", ");
+  image.sizes = sizes;
+}
+
+function inquiryUrl(work) {
+  const message = format(ui.inquiryMessage, {
+    title: localized(work.title),
+    year: work.year,
+  });
+  const url = new URL("https://t.me/lilimiller");
+  url.searchParams.set("text", message);
+  return url.toString();
 }
 
 function setMetaContent(selector, content) {
@@ -106,6 +128,7 @@ function createRelatedCard(work) {
   link.href = workPath(work.slug);
   const image = element("img");
   image.src = rootPath(work.hero);
+  applyResponsiveImage(image, work.hero, "(max-width: 760px) 100vw, 33vw");
   image.alt = format(ui.imageAlt, { title: localized(work.title) });
   image.loading = "lazy";
   image.decoding = "async";
@@ -139,6 +162,7 @@ function renderWork(work, works) {
   const heroFigure = element("figure", "work-hero__figure image-shell");
   const heroImage = element("img");
   heroImage.src = rootPath(work.hero);
+  applyResponsiveImage(heroImage, work.hero, "(max-width: 760px) 100vw, 50vw");
   heroImage.alt = format(ui.imageAlt, { title: localized(work.title) });
   heroImage.decoding = "async";
   heroFigure.append(heroImage);
@@ -160,11 +184,40 @@ function renderWork(work, works) {
     fact(ui.size, localized(work.dimensions))
   );
   const inquiry = element("a", "work-inquiry", ui.inquiry);
-  inquiry.href = "https://t.me/lilimiller";
+  inquiry.href = inquiryUrl(work);
   inquiry.target = "_blank";
   inquiry.rel = "noreferrer";
+  inquiry.dataset.ymGoal = "inquiry_start";
+  inquiry.dataset.ymSource = "work_hero";
+  inquiry.dataset.ymWork = work.slug;
   content.append(top, series, title, excerpt, facts, inquiry);
   hero.append(heroFigure, content);
+
+  const inquirySection = element("section", "work-inquiry-panel");
+  inquirySection.setAttribute("aria-labelledby", "work-inquiry-title");
+  const inquiryHeading = element("div");
+  inquiryHeading.append(
+    element("p", "eyebrow", ui.inquiryEyebrow),
+    element("h2", "", ui.inquiryTitle)
+  );
+  inquiryHeading.querySelector("h2").id = "work-inquiry-title";
+  const inquiryContent = element("div", "work-inquiry-panel__content");
+  const inquiryButton = element("a", "contact__button", ui.inquiryButton);
+  inquiryButton.href = inquiryUrl(work);
+  inquiryButton.target = "_blank";
+  inquiryButton.rel = "noreferrer";
+  inquiryButton.dataset.ymGoal = "inquiry_start";
+  inquiryButton.dataset.ymSource = "work_inquiry";
+  inquiryButton.dataset.ymWork = work.slug;
+  const inquiryArrow = element("span", "", "↗");
+  inquiryArrow.setAttribute("aria-hidden", "true");
+  inquiryButton.append(inquiryArrow);
+  inquiryContent.append(
+    element("p", "", ui.inquiryText),
+    inquiryButton,
+    element("small", "", ui.inquiryNote)
+  );
+  inquirySection.append(inquiryHeading, inquiryContent);
 
   const story = element("section", "work-story");
   const storyIndex = element("div", "work-story__index", ui.storyIndex);
@@ -187,6 +240,7 @@ function renderWork(work, works) {
     const figure = element("figure", "work-gallery__item image-shell");
     const image = element("img");
     image.src = rootPath(src);
+    applyResponsiveImage(image, src, "(max-width: 760px) 100vw, 50vw");
     image.alt = format(ui.detailAlt, { title: localized(work.title), index: index + 1 });
     image.loading = index < 2 ? "eager" : "lazy";
     image.decoding = "async";
@@ -220,7 +274,7 @@ function renderWork(work, works) {
   related.forEach((item) => relatedGrid.append(createRelatedCard(item)));
   relatedSection.append(relatedHeading, relatedGrid);
 
-  root.replaceChildren(breadcrumbs, hero, story, gallerySection, sourceSection, relatedSection);
+  root.replaceChildren(breadcrumbs, hero, inquirySection, story, gallerySection, sourceSection, relatedSection);
 }
 
 function renderError(message) {
@@ -236,14 +290,21 @@ async function loadWork() {
   const slug = root?.dataset.workSlug || new URLSearchParams(window.location.search).get("slug");
 
   try {
-    const [worksResponse, i18nResponse] = await Promise.all([
+    const [worksResponse, i18nResponse, imageAssetsResponse] = await Promise.all([
       fetch("/data/works.json"),
       fetch("/data/i18n.json"),
+      fetch("/data/image-assets.json"),
     ]);
     if (!worksResponse.ok) throw new Error(`Works HTTP ${worksResponse.status}`);
     if (!i18nResponse.ok) throw new Error(`I18n HTTP ${i18nResponse.status}`);
-    const [data, i18n] = await Promise.all([worksResponse.json(), i18nResponse.json()]);
+    if (!imageAssetsResponse.ok) throw new Error(`Image assets HTTP ${imageAssetsResponse.status}`);
+    const [data, i18n, loadedImageAssets] = await Promise.all([
+      worksResponse.json(),
+      i18nResponse.json(),
+      imageAssetsResponse.json(),
+    ]);
     ui = i18n[LANGUAGE].work;
+    imageAssets = loadedImageAssets;
 
     if (!slug) {
       renderError(ui.notSelected);
@@ -266,4 +327,4 @@ async function loadWork() {
   }
 }
 
-loadWork();
+if (root && !root.dataset.workSlug) loadWork();
