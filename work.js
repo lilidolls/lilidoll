@@ -1,6 +1,7 @@
 const root = document.querySelector("[data-work-root]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const menu = document.querySelector("[data-menu]");
+const SITE_ORIGIN = "https://lilidoll.ru";
 
 const statusLabels = {
   exhibition: "На выставке",
@@ -13,6 +14,41 @@ function localized(value) {
   if (value == null) return "";
   if (typeof value === "string") return value;
   return value.ru || value.en || "";
+}
+
+function rootPath(path) {
+  if (!path || /^(?:https?:)?\/\//.test(path)) return path;
+  return `/${path.replace(/^\/+/, "")}`;
+}
+
+function workPath(slug) {
+  return `/works/${encodeURIComponent(slug)}/`;
+}
+
+function setMetaContent(selector, content) {
+  document.querySelector(selector)?.setAttribute("content", content);
+}
+
+function updateMetadata(work) {
+  const title = `${localized(work.title)} — авторская кукла Lili Miller`;
+  const description = `${localized(work.excerpt)} Авторская работа Lili Miller, ${work.year}.`;
+  const url = `${SITE_ORIGIN}${workPath(work.slug)}`;
+
+  document.title = title;
+  document.querySelector("[data-description]")?.setAttribute("content", description);
+  setMetaContent('meta[property="og:title"]', title);
+  setMetaContent('meta[property="og:description"]', description);
+  setMetaContent('meta[property="og:url"]', url);
+  setMetaContent('meta[name="twitter:title"]', title);
+  setMetaContent('meta[name="twitter:description"]', description);
+
+  let canonical = document.querySelector('link[rel="canonical"]');
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    document.head.append(canonical);
+  }
+  canonical.href = url;
 }
 
 function element(tag, className, text) {
@@ -45,9 +81,9 @@ function fact(label, value) {
 function createRelatedCard(work) {
   const article = element("article", "related-card");
   const link = element("a", "related-card__link");
-  link.href = `work.html?slug=${encodeURIComponent(work.slug)}`;
+  link.href = workPath(work.slug);
   const image = element("img");
-  image.src = work.hero;
+  image.src = rootPath(work.hero);
   image.alt = `${localized(work.title)} — авторская кукла Lili Miller`;
   image.loading = "lazy";
   image.decoding = "async";
@@ -60,22 +96,21 @@ function createRelatedCard(work) {
 }
 
 function renderWork(work, works) {
-  document.title = `${localized(work.title)} — Lili Miller`;
-  document.querySelector("[data-description]")?.setAttribute("content", localized(work.excerpt));
+  updateMetadata(work);
 
   const breadcrumbs = element("nav", "work-breadcrumbs");
   breadcrumbs.setAttribute("aria-label", "Хлебные крошки");
   const homeLink = element("a", "", "Lili Miller");
-  homeLink.href = "index.html";
+  homeLink.href = "/";
   const catalogLink = element("a", "", "Каталог");
-  catalogLink.href = "catalog.html";
+  catalogLink.href = "/catalog.html";
   breadcrumbs.append(homeLink, element("span", "", "/"), catalogLink, element("span", "", "/"), element("span", "", localized(work.title)));
 
   const hero = element("section", "work-hero");
   hero.setAttribute("aria-labelledby", "work-title");
   const heroFigure = element("figure", "work-hero__figure image-shell");
   const heroImage = element("img");
-  heroImage.src = work.hero;
+  heroImage.src = rootPath(work.hero);
   heroImage.alt = `${localized(work.title)} — авторская кукла Lili Miller`;
   heroImage.decoding = "async";
   heroFigure.append(heroImage);
@@ -116,7 +151,7 @@ function renderWork(work, works) {
   work.gallery.forEach((src, index) => {
     const figure = element("figure", "work-gallery__item image-shell");
     const image = element("img");
-    image.src = src;
+    image.src = rootPath(src);
     image.alt = `${localized(work.title)}, деталь ${index + 1}`;
     image.loading = index < 2 ? "eager" : "lazy";
     image.decoding = "async";
@@ -157,20 +192,20 @@ function renderError(message) {
   const section = element("section", "work-error");
   section.append(element("p", "eyebrow", "Каталог"), element("h1", "", message));
   const link = element("a", "text-link", "Вернуться ко всем работам →");
-  link.href = "catalog.html";
+  link.href = "/catalog.html";
   section.append(link);
   root.replaceChildren(section);
 }
 
 async function loadWork() {
-  const slug = new URLSearchParams(window.location.search).get("slug");
+  const slug = root?.dataset.workSlug || new URLSearchParams(window.location.search).get("slug");
   if (!slug) {
     renderError("Работа не выбрана");
     return;
   }
 
   try {
-    const response = await fetch("data/works.json");
+    const response = await fetch("/data/works.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     const work = data.works.find((item) => item.slug === slug);

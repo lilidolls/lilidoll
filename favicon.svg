@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lili Miller">
+  <rect width="64" height="64" rx="14" fill="#171313" />
+  <circle cx="49" cy="15" r="4" fill="#9f1f24" />
+  <path
+    d="M16 17v30h18v-5H22V17zm21 0v30h6V29l7 11 7-11v18h6V17h-6L50 30l-7-13z"
+    fill="#f2eee7"
+  />
+</svg>
