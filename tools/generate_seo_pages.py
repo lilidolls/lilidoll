@@ -7,11 +7,13 @@ import html
 import json
 import re
 from pathlib import Path
+from urllib.parse import quote
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "works.json"
 I18N_PATH = ROOT / "data" / "i18n.json"
+IMAGE_ASSETS_PATH = ROOT / "data" / "image-assets.json"
 SITE_ORIGIN = "https://lilidoll.ru"
 SOCIAL_IMAGE = f"{SITE_ORIGIN}/assets/images/social-preview.jpg"
 METRIKA_HEAD = '''    <!-- Yandex.Metrika counter -->
@@ -48,6 +50,29 @@ def root_path(path: str) -> str:
     if path.startswith(("http://", "https://", "/")):
         return path
     return f"/{path}"
+
+
+def responsive_attributes(path: str, image_assets: dict, sizes: str) -> str:
+    metadata = image_assets.get("images", {}).get(path)
+    if not metadata:
+        return ""
+    srcset = ", ".join(
+        f"{root_path(item['path'])} {item['width']}w"
+        for item in metadata.get("variants", [])
+    )
+    return (
+        f' width="{metadata["width"]}" height="{metadata["height"]}"'
+        f' srcset="{escaped(srcset)}" sizes="{escaped(sizes)}"'
+    )
+
+
+def telegram_inquiry_url(work: dict, language: str, ui: dict) -> str:
+    message = format_text(
+        ui["inquiryMessage"],
+        title=localized(work["title"], language),
+        year=work["year"],
+    )
+    return f"https://t.me/lilimiller?text={quote(message)}"
 
 
 def language_prefix(language: str, i18n: dict) -> str:
@@ -431,14 +456,19 @@ def localize_shell(template: str, language: str, page: str, works: list[dict], i
     return document
 
 
-def render_gallery(work: dict, language: str, ui: dict) -> str:
+def render_gallery(work: dict, language: str, ui: dict, image_assets: dict) -> str:
     figures = []
     title = localized(work["title"], language)
     for index, source in enumerate(work.get("gallery", []), start=1):
         alt = format_text(ui["detailAlt"], title=title, index=index)
+        responsive = responsive_attributes(
+            source,
+            image_assets,
+            "(max-width: 760px) 100vw, 50vw",
+        )
         figures.append(
             f'''          <figure class="work-gallery__item image-shell">
-            <img src="{escaped(root_path(source))}" alt="{escaped(alt)}" loading="lazy" decoding="async" />
+            <img src="{escaped(root_path(source))}"{responsive} alt="{escaped(alt)}" loading="lazy" decoding="async" />
           </figure>'''
         )
     return "\n".join(figures)
@@ -454,15 +484,27 @@ def render_sources(work: dict, ui: dict) -> str:
     return "\n".join(links)
 
 
-def render_related(work: dict, works: list[dict], language: str, i18n: dict, ui: dict) -> str:
+def render_related(
+    work: dict,
+    works: list[dict],
+    language: str,
+    i18n: dict,
+    ui: dict,
+    image_assets: dict,
+) -> str:
     cards = []
     for item in related_works(work, works):
         title = localized(item["title"], language)
         alt = format_text(ui["imageAlt"], title=title)
+        responsive = responsive_attributes(
+            item["hero"],
+            image_assets,
+            "(max-width: 760px) 100vw, 33vw",
+        )
         cards.append(
             f'''          <article class="related-card">
             <a class="related-card__link" href="{page_path(language, 'work', i18n, item['slug'])}">
-              <img src="{escaped(root_path(item['hero']))}" alt="{escaped(alt)}" loading="lazy" decoding="async" />
+              <img src="{escaped(root_path(item['hero']))}"{responsive} alt="{escaped(alt)}" loading="lazy" decoding="async" />
               <div class="related-card__meta"><span>{escaped(localized(item['seriesLabel'], language))}</span><span>{escaped(item['year'])}</span></div>
               <h3>{escaped(title)}</h3>
             </a>
@@ -471,7 +513,13 @@ def render_related(work: dict, works: list[dict], language: str, i18n: dict, ui:
     return "\n".join(cards)
 
 
-def render_work_page(work: dict, works: list[dict], language: str, i18n: dict) -> str:
+def render_work_page(
+    work: dict,
+    works: list[dict],
+    language: str,
+    i18n: dict,
+    image_assets: dict,
+) -> str:
     common = i18n[language]["common"]
     ui = i18n[language]["work"]
     seo = i18n[language]["seo"]
@@ -486,6 +534,20 @@ def render_work_page(work: dict, works: list[dict], language: str, i18n: dict) -
     edition = localized(work.get("edition"), language) or ui["unknown"]
     image_alt = format_text(ui["imageAlt"], title=title_text)
     gallery = work.get("gallery", [])
+    inquiry_url = telegram_inquiry_url(work, language, ui)
+    hero_responsive = responsive_attributes(
+        work["hero"],
+        image_assets,
+        "(max-width: 760px) 100vw, 50vw",
+    )
+    social_preview = image_assets.get("socialPreviews", {}).get(work["slug"], {})
+    social_image = (
+        f"{SITE_ORIGIN}{root_path(social_preview['path'])}"
+        if social_preview.get("path")
+        else SOCIAL_IMAGE
+    )
+    social_width = social_preview.get("width", 1200)
+    social_height = social_preview.get("height", 630)
     og_alternates = "\n".join(
         f'    <meta property="og:locale:alternate" content="{item["ogLocale"]}" />'
         for code, item in i18n["languages"].items()
@@ -512,17 +574,17 @@ def render_work_page(work: dict, works: list[dict], language: str, i18n: dict) -
     <meta property="og:url" content="{url}" />
     <meta property="og:title" content="{escaped(title)}" />
     <meta property="og:description" content="{escaped(description)}" />
-    <meta property="og:image" content="{SOCIAL_IMAGE}" />
+    <meta property="og:image" content="{social_image}" />
     <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="{escaped(seo['socialImageAlt'])}" />
+    <meta property="og:image:width" content="{social_width}" />
+    <meta property="og:image:height" content="{social_height}" />
+    <meta property="og:image:alt" content="{escaped(image_alt)}" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{escaped(title)}" />
     <meta name="twitter:description" content="{escaped(description)}" />
-    <meta name="twitter:image" content="{SOCIAL_IMAGE}" />
-    <meta name="twitter:image:alt" content="{escaped(seo['socialImageAlt'])}" />
+    <meta name="twitter:image" content="{social_image}" />
+    <meta name="twitter:image:alt" content="{escaped(image_alt)}" />
 
     <title>{escaped(title)}</title>
     <script type="application/ld+json" data-work-schema>
@@ -561,7 +623,7 @@ def render_work_page(work: dict, works: list[dict], language: str, i18n: dict) -
 
       <section class="work-hero" aria-labelledby="work-title">
         <figure class="work-hero__figure image-shell">
-          <img src="{escaped(root_path(work['hero']))}" alt="{escaped(image_alt)}" decoding="async" fetchpriority="high" />
+          <img src="{escaped(root_path(work['hero']))}"{hero_responsive} alt="{escaped(image_alt)}" decoding="async" fetchpriority="high" />
         </figure>
         <div class="work-hero__content">
           <div class="work-hero__top"><span class="work-status work-status--{escaped(work['status'])}">{escaped(status)}</span><span>{escaped(work['year'])}</span></div>
@@ -575,7 +637,19 @@ def render_work_page(work: dict, works: list[dict], language: str, i18n: dict) -
             <div class="work-facts__item"><dt>{escaped(ui['edition'])}</dt><dd>{escaped(edition)}</dd></div>
             <div class="work-facts__item"><dt>{escaped(ui['size'])}</dt><dd>{escaped(dimensions)}</dd></div>
           </dl>
-          <a class="work-inquiry" href="https://t.me/lilimiller" target="_blank" rel="noreferrer">{escaped(ui['inquiry'])}</a>
+          <a class="work-inquiry" href="{escaped(inquiry_url)}" target="_blank" rel="noreferrer" data-ym-goal="inquiry_start" data-ym-source="work_hero" data-ym-work="{escaped(work['slug'])}">{escaped(ui['inquiry'])}</a>
+        </div>
+      </section>
+
+      <section class="work-inquiry-panel" aria-labelledby="work-inquiry-title">
+        <div>
+          <p class="eyebrow">{escaped(ui['inquiryEyebrow'])}</p>
+          <h2 id="work-inquiry-title">{escaped(ui['inquiryTitle'])}</h2>
+        </div>
+        <div class="work-inquiry-panel__content">
+          <p>{escaped(ui['inquiryText'])}</p>
+          <a class="contact__button" href="{escaped(inquiry_url)}" target="_blank" rel="noreferrer" data-ym-goal="inquiry_start" data-ym-source="work_inquiry" data-ym-work="{escaped(work['slug'])}">{escaped(ui['inquiryButton'])}<span aria-hidden="true">↗</span></a>
+          <small>{escaped(ui['inquiryNote'])}</small>
         </div>
       </section>
 
@@ -591,7 +665,7 @@ def render_work_page(work: dict, works: list[dict], language: str, i18n: dict) -
       <section class="work-gallery-section">
         <div class="work-section-heading"><p class="eyebrow">{escaped(format_text(ui['galleryLabel'], count=len(gallery)))}</p><h2>{escaped(ui['details'])}</h2></div>
         <div class="work-gallery">
-{render_gallery(work, language, ui)}
+{render_gallery(work, language, ui, image_assets)}
         </div>
       </section>
 
@@ -605,7 +679,7 @@ def render_work_page(work: dict, works: list[dict], language: str, i18n: dict) -
       <section class="related-works">
         <div class="work-section-heading work-section-heading--row"><p class="eyebrow">{escaped(ui['relatedLabel'])}</p><h2>{escaped(ui['relatedTitle'])}</h2></div>
         <div class="related-grid">
-{render_related(work, works, language, i18n, ui)}
+{render_related(work, works, language, i18n, ui, image_assets)}
         </div>
       </section>
     </main>
@@ -708,6 +782,9 @@ def clear_stale_work_pages(directory: Path, expected: set[Path]) -> None:
 def main() -> None:
     data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     i18n = json.loads(I18N_PATH.read_text(encoding="utf-8"))
+    if not IMAGE_ASSETS_PATH.is_file():
+        raise SystemExit("Run tools/generate_image_assets.py before generating SEO pages")
+    image_assets = json.loads(IMAGE_ASSETS_PATH.read_text(encoding="utf-8"))
     works = data.get("works", [])
     last_modified = data.get("generatedAt", "2026-07-15")
 
@@ -735,7 +812,7 @@ def main() -> None:
             target_dir = works_dir / work["slug"]
             target_dir.mkdir(parents=True, exist_ok=True)
             (target_dir / "index.html").write_text(
-                render_work_page(work, works, language, i18n),
+                render_work_page(work, works, language, i18n, image_assets),
                 encoding="utf-8",
             )
             expected.add(target_dir)

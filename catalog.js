@@ -18,6 +18,7 @@ const LOCALE = LANGUAGE === "zh" ? "zh-Hans" : LANGUAGE;
 
 let works = [];
 let ui = null;
+let imageAssets = { images: {} };
 let searchGoalTimer = null;
 
 function format(template, values) {
@@ -40,6 +41,17 @@ function rootPath(path) {
 
 function workPath(slug) {
   return `${LANGUAGE_PREFIX}/works/${encodeURIComponent(slug)}/`;
+}
+
+function applyResponsiveImage(image, path, sizes) {
+  const metadata = imageAssets.images?.[path];
+  if (!metadata) return;
+  image.width = metadata.width;
+  image.height = metadata.height;
+  image.srcset = metadata.variants
+    .map((variant) => `${rootPath(variant.path)} ${variant.width}w`)
+    .join(", ");
+  image.sizes = sizes;
 }
 
 function statusLabel(status) {
@@ -166,6 +178,7 @@ function createCard(work, index) {
   imageWrap.className = "catalog-card__image image-shell";
   const image = document.createElement("img");
   image.src = rootPath(work.hero);
+  applyResponsiveImage(image, work.hero, "(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw");
   image.alt = format(ui.imageAlt, { title: localized(work.title) });
   image.loading = "lazy";
   image.decoding = "async";
@@ -310,15 +323,22 @@ filterChips?.addEventListener("click", (event) => {
 
 async function loadCatalog() {
   try {
-    const [worksResponse, i18nResponse] = await Promise.all([
+    const [worksResponse, i18nResponse, imageAssetsResponse] = await Promise.all([
       fetch("/data/works.json"),
       fetch("/data/i18n.json"),
+      fetch("/data/image-assets.json"),
     ]);
     if (!worksResponse.ok) throw new Error(`Works HTTP ${worksResponse.status}`);
     if (!i18nResponse.ok) throw new Error(`I18n HTTP ${i18nResponse.status}`);
-    const [worksData, i18n] = await Promise.all([worksResponse.json(), i18nResponse.json()]);
+    if (!imageAssetsResponse.ok) throw new Error(`Image assets HTTP ${imageAssetsResponse.status}`);
+    const [worksData, i18n, loadedImageAssets] = await Promise.all([
+      worksResponse.json(),
+      i18nResponse.json(),
+      imageAssetsResponse.json(),
+    ]);
     works = worksData.works || [];
     ui = i18n[LANGUAGE].catalog;
+    imageAssets = loadedImageAssets;
     catalogTotal.textContent = String(works.length).padStart(2, "0");
     setupFilterOptions();
     restoreFiltersFromUrl();

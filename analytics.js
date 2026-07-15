@@ -85,6 +85,7 @@
         reachGoal(marked.dataset.ymGoal, {
           source: marked.dataset.ymSource || "content",
           label: marked.dataset.ymLabel || "",
+          ...(marked.dataset.ymWork ? { work_slug: marked.dataset.ymWork } : {}),
         });
         return;
       }
