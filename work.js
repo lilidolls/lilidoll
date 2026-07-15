@@ -3,17 +3,26 @@ const menuToggle = document.querySelector("[data-menu-toggle]");
 const menu = document.querySelector("[data-menu]");
 const SITE_ORIGIN = "https://lilidoll.ru";
 
-const statusLabels = {
-  exhibition: "На выставке",
-  private: "Частная коллекция",
-  archive: "Архив",
-  available: "Доступна",
-};
+const LANGUAGE = document.documentElement.lang === "zh-Hans"
+  ? "zh"
+  : document.documentElement.lang.startsWith("en")
+    ? "en"
+    : "ru";
+const LANGUAGE_PREFIX = LANGUAGE === "ru" ? "" : `/${LANGUAGE}`;
+
+let ui = null;
+
+function format(template, values) {
+  return Object.entries(values).reduce(
+    (result, [key, value]) => result.replaceAll(`{${key}}`, String(value)),
+    template
+  );
+}
 
 function localized(value) {
   if (value == null) return "";
   if (typeof value === "string") return value;
-  return value.ru || value.en || "";
+  return value[LANGUAGE] || value.en || value.ru || "";
 }
 
 function rootPath(path) {
@@ -21,17 +30,30 @@ function rootPath(path) {
   return `/${path.replace(/^\/+/, "")}`;
 }
 
+function homePath() {
+  return `${LANGUAGE_PREFIX}/` || "/";
+}
+
+function catalogPath() {
+  return `${LANGUAGE_PREFIX}/catalog.html`;
+}
+
 function workPath(slug) {
-  return `/works/${encodeURIComponent(slug)}/`;
+  return `${LANGUAGE_PREFIX}/works/${encodeURIComponent(slug)}/`;
 }
 
 function setMetaContent(selector, content) {
   document.querySelector(selector)?.setAttribute("content", content);
 }
 
+function statusLabel(status) {
+  const key = `status${status.charAt(0).toUpperCase()}${status.slice(1)}`;
+  return ui?.[key] || status;
+}
+
 function updateMetadata(work) {
-  const title = `${localized(work.title)} — авторская кукла Lili Miller`;
-  const description = `${localized(work.excerpt)} Авторская работа Lili Miller, ${work.year}.`;
+  const title = `${localized(work.title)} ${ui.titleSuffix}`;
+  const description = `${localized(work.excerpt)} ${format(ui.descriptionSuffix, { year: work.year })}`;
   const url = `${SITE_ORIGIN}${workPath(work.slug)}`;
 
   document.title = title;
@@ -74,7 +96,7 @@ menu?.querySelectorAll("a").forEach((link) => link.addEventListener("click", clo
 
 function fact(label, value) {
   const item = element("div", "work-facts__item");
-  item.append(element("dt", "", label), element("dd", "", value || "Уточняется"));
+  item.append(element("dt", "", label), element("dd", "", value || ui.unknown));
   return item;
 }
 
@@ -84,7 +106,7 @@ function createRelatedCard(work) {
   link.href = workPath(work.slug);
   const image = element("img");
   image.src = rootPath(work.hero);
-  image.alt = `${localized(work.title)} — авторская кукла Lili Miller`;
+  image.alt = format(ui.imageAlt, { title: localized(work.title) });
   image.loading = "lazy";
   image.decoding = "async";
   const meta = element("div", "related-card__meta");
@@ -99,25 +121,31 @@ function renderWork(work, works) {
   updateMetadata(work);
 
   const breadcrumbs = element("nav", "work-breadcrumbs");
-  breadcrumbs.setAttribute("aria-label", "Хлебные крошки");
+  breadcrumbs.setAttribute("aria-label", ui.breadcrumbs);
   const homeLink = element("a", "", "Lili Miller");
-  homeLink.href = "/";
-  const catalogLink = element("a", "", "Каталог");
-  catalogLink.href = "/catalog.html";
-  breadcrumbs.append(homeLink, element("span", "", "/"), catalogLink, element("span", "", "/"), element("span", "", localized(work.title)));
+  homeLink.href = homePath();
+  const catalogLink = element("a", "", ui.catalog);
+  catalogLink.href = catalogPath();
+  breadcrumbs.append(
+    homeLink,
+    element("span", "", "/"),
+    catalogLink,
+    element("span", "", "/"),
+    element("span", "", localized(work.title))
+  );
 
   const hero = element("section", "work-hero");
   hero.setAttribute("aria-labelledby", "work-title");
   const heroFigure = element("figure", "work-hero__figure image-shell");
   const heroImage = element("img");
   heroImage.src = rootPath(work.hero);
-  heroImage.alt = `${localized(work.title)} — авторская кукла Lili Miller`;
+  heroImage.alt = format(ui.imageAlt, { title: localized(work.title) });
   heroImage.decoding = "async";
   heroFigure.append(heroImage);
 
   const content = element("div", "work-hero__content");
   const top = element("div", "work-hero__top");
-  const status = element("span", `work-status work-status--${work.status}`, statusLabels[work.status] || work.status);
+  const status = element("span", `work-status work-status--${work.status}`, statusLabel(work.status));
   top.append(status, element("span", "", work.year));
   const series = element("p", "eyebrow", localized(work.seriesLabel));
   const title = element("h1", "", localized(work.title));
@@ -125,13 +153,13 @@ function renderWork(work, works) {
   const excerpt = element("p", "work-hero__lead", localized(work.excerpt));
   const facts = element("dl", "work-facts");
   facts.append(
-    fact("Материал", localized(work.material)),
-    fact("Год", work.year),
-    fact("Статус", statusLabels[work.status] || work.status),
-    fact("Тираж", localized(work.edition)),
-    fact("Размер", work.dimensions)
+    fact(ui.material, localized(work.material)),
+    fact(ui.year, work.year),
+    fact(ui.status, statusLabel(work.status)),
+    fact(ui.edition, localized(work.edition)),
+    fact(ui.size, localized(work.dimensions))
   );
-  const inquiry = element("a", "work-inquiry", "Уточнить о работе в Telegram ↗");
+  const inquiry = element("a", "work-inquiry", ui.inquiry);
   inquiry.href = "https://t.me/lilimiller";
   inquiry.target = "_blank";
   inquiry.rel = "noreferrer";
@@ -139,20 +167,27 @@ function renderWork(work, works) {
   hero.append(heroFigure, content);
 
   const story = element("section", "work-story");
-  const storyIndex = element("div", "work-story__index", "История / 01");
+  const storyIndex = element("div", "work-story__index", ui.storyIndex);
   const storyContent = element("div", "work-story__content");
-  storyContent.append(element("p", "eyebrow", localized(work.directionLabel)), element("h2", "", "История персонажа"), element("p", "work-story__text", localized(work.story)));
+  storyContent.append(
+    element("p", "eyebrow", localized(work.directionLabel)),
+    element("h2", "", ui.storyTitle),
+    element("p", "work-story__text", localized(work.story))
+  );
   story.append(storyIndex, storyContent);
 
   const gallerySection = element("section", "work-gallery-section");
   const galleryHeading = element("div", "work-section-heading");
-  galleryHeading.append(element("p", "eyebrow", `Галерея · ${work.gallery.length} кадров`), element("h2", "", "Детали образа"));
+  galleryHeading.append(
+    element("p", "eyebrow", format(ui.galleryLabel, { count: work.gallery.length })),
+    element("h2", "", ui.details)
+  );
   const gallery = element("div", "work-gallery");
   work.gallery.forEach((src, index) => {
     const figure = element("figure", "work-gallery__item image-shell");
     const image = element("img");
     image.src = rootPath(src);
-    image.alt = `${localized(work.title)}, деталь ${index + 1}`;
+    image.alt = format(ui.detailAlt, { title: localized(work.title), index: index + 1 });
     image.loading = index < 2 ? "eager" : "lazy";
     image.decoding = "async";
     figure.append(image);
@@ -161,12 +196,12 @@ function renderWork(work, works) {
   gallerySection.append(galleryHeading, gallery);
 
   const sourceSection = element("section", "work-sources");
-  sourceSection.append(element("p", "eyebrow", "Архив художника"));
-  const sourceTitle = element("h2", "", "Публикации о работе");
-  sourceSection.append(sourceTitle);
+  sourceSection.append(element("p", "eyebrow", ui.archive));
+  sourceSection.append(element("h2", "", ui.publications));
   const sourceLinks = element("div", "work-sources__links");
   work.sourcePosts.forEach((url, index) => {
-    const link = element("a", "", `Оригинальная публикация ${String(index + 1).padStart(2, "0")} ↗`);
+    const label = format(ui.originalPost, { index: String(index + 1).padStart(2, "0") });
+    const link = element("a", "", label);
     link.href = url;
     link.target = "_blank";
     link.rel = "noreferrer";
@@ -180,7 +215,7 @@ function renderWork(work, works) {
     .slice(0, 3);
   const relatedSection = element("section", "related-works");
   const relatedHeading = element("div", "work-section-heading work-section-heading--row");
-  relatedHeading.append(element("p", "eyebrow", "Продолжить знакомство"), element("h2", "", "Другие работы"));
+  relatedHeading.append(element("p", "eyebrow", ui.relatedLabel), element("h2", "", ui.relatedTitle));
   const relatedGrid = element("div", "related-grid");
   related.forEach((item) => relatedGrid.append(createRelatedCard(item)));
   relatedSection.append(relatedHeading, relatedGrid);
@@ -190,32 +225,43 @@ function renderWork(work, works) {
 
 function renderError(message) {
   const section = element("section", "work-error");
-  section.append(element("p", "eyebrow", "Каталог"), element("h1", "", message));
-  const link = element("a", "text-link", "Вернуться ко всем работам →");
-  link.href = "/catalog.html";
+  section.append(element("p", "eyebrow", ui.catalog), element("h1", "", message));
+  const link = element("a", "text-link", ui.returnCatalog);
+  link.href = catalogPath();
   section.append(link);
   root.replaceChildren(section);
 }
 
 async function loadWork() {
   const slug = root?.dataset.workSlug || new URLSearchParams(window.location.search).get("slug");
-  if (!slug) {
-    renderError("Работа не выбрана");
-    return;
-  }
 
   try {
-    const response = await fetch("/data/works.json");
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const [worksResponse, i18nResponse] = await Promise.all([
+      fetch("/data/works.json"),
+      fetch("/data/i18n.json"),
+    ]);
+    if (!worksResponse.ok) throw new Error(`Works HTTP ${worksResponse.status}`);
+    if (!i18nResponse.ok) throw new Error(`I18n HTTP ${i18nResponse.status}`);
+    const [data, i18n] = await Promise.all([worksResponse.json(), i18nResponse.json()]);
+    ui = i18n[LANGUAGE].work;
+
+    if (!slug) {
+      renderError(ui.notSelected);
+      return;
+    }
     const work = data.works.find((item) => item.slug === slug);
     if (!work) {
-      renderError("Работа не найдена");
+      renderError(ui.notFound);
       return;
     }
     renderWork(work, data.works);
   } catch (error) {
-    renderError("Не удалось загрузить работу");
+    ui ||= {
+      catalog: "Каталог",
+      loadError: "Не удалось загрузить работу",
+      returnCatalog: "Вернуться ко всем работам →",
+    };
+    renderError(ui.loadError);
     console.error("Work loading error", error);
   }
 }

@@ -14,12 +14,17 @@
     />
     <meta name="theme-color" content="#171313" />
     <link rel="canonical" href="https://lilidoll.ru/" />
+    <link rel="alternate" hreflang="ru" href="https://lilidoll.ru/" />
+    <link rel="alternate" hreflang="en" href="https://lilidoll.ru/en/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://lilidoll.ru/zh/" />
+    <link rel="alternate" hreflang="x-default" href="https://lilidoll.ru/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Lili Miller" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
     <meta property="og:url" content="https://lilidoll.ru/" />
     <meta property="og:title" content="Lili Miller — авторские фарфоровые куклы" />
     <meta
@@ -48,7 +53,7 @@
     />
 
     <title>Lili Miller — авторские фарфоровые куклы</title>
-    <script type="application/ld+json">
+    <script type="application/ld+json" data-home-schema>
       {
         "@context": "https://schema.org",
         "@graph": [
@@ -58,7 +63,7 @@
             "url": "https://lilidoll.ru/",
             "name": "Lili Miller",
             "alternateName": "Lili Miller Dolls",
-            "inLanguage": ["ru", "en"],
+            "inLanguage": ["ru", "en", "zh-Hans"],
             "publisher": { "@id": "https://lilidoll.ru/#artist" }
           },
           {
@@ -92,13 +97,28 @@
       }
     </script>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110756646', 'ym');
+
+      ym(110756646, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <!-- /Yandex.Metrika counter -->
+    <script src="/analytics.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Перейти к содержанию</a>
+    <noscript><div><img src="https://mc.yandex.ru/watch/110756646" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <a class="skip-link" href="#main" data-i18n="skipLink">Перейти к содержанию</a>
 
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Lili Miller, на главную">
+      <a class="brand" href="#top" aria-label="Lili Miller, на главную" data-i18n-aria-label="brandHome">
         <span class="brand__mark" aria-hidden="true">LM</span>
         <span class="brand__name">Lili Miller</span>
       </a>
@@ -111,10 +131,10 @@
         data-menu-toggle
       >
         <span></span><span></span>
-        <span class="sr-only">Открыть меню</span>
+        <span class="sr-only" data-i18n="menuOpen">Открыть меню</span>
       </button>
 
-      <nav class="main-nav" id="main-navigation" aria-label="Основная навигация" data-menu>
+      <nav class="main-nav" id="main-navigation" aria-label="Основная навигация" data-i18n-aria-label="navLabel" data-menu>
         <a href="catalog.html" data-i18n="navCatalog">Каталог</a>
         <a href="#works" data-i18n="navWorks">Работы</a>
         <a href="#story" data-i18n="navStories">Истории</a>
@@ -123,9 +143,11 @@
         <a href="#contact" data-i18n="navContact">Контакты</a>
       </nav>
 
-      <button class="language-toggle" type="button" aria-label="Switch language" data-language>
-        <span class="is-active">RU</span><span>/</span><span>EN</span>
-      </button>
+      <nav class="language-toggle" aria-label="Выбор языка" data-i18n-aria-label="languageNav">
+        <a href="/" lang="ru" aria-current="page">RU</a><span>/</span>
+        <a href="/en/" lang="en">EN</a><span>/</span>
+        <a href="/zh/" lang="zh-Hans">中文</a>
+      </nav>
     </header>
 
     <main id="main">
@@ -158,13 +180,14 @@
           <img
             src="assets/images/telegram-web/lilimillerdoll/232.webp"
             alt="Оцую — авторская кукла Lili Miller в красном образе"
+            data-i18n-alt="heroImageAlt"
             width="2000"
             height="1795"
             fetchpriority="high"
           />
           <figcaption>
-            <span>Оцую</span>
-            <span>Душа красной лилии · 2025–2026</span>
+            <span data-i18n="heroCaptionTitle">Оцую</span>
+            <span data-i18n="heroCaptionSubtitle">Душа красной лилии · 2025–2026</span>
           </figcaption>
         </figure>
 
@@ -172,8 +195,8 @@
         <div class="hero__scroll" aria-hidden="true"><span></span></div>
       </section>
 
-      <section class="manifesto section-pad" aria-label="Манифест">
-        <div class="manifesto__line reveal">
+      <section class="manifesto section-pad" aria-label="Манифест" data-i18n-aria-label="manifestoLabel">
+        <div class="manifesto__line reveal" data-i18n="manifestoLine">
           <span>Фарфор</span><i></i><span>История</span><i></i><span>Душа</span>
         </div>
         <p class="manifesto__text reveal" data-i18n="manifesto">
@@ -198,62 +221,64 @@
         <div class="works-grid">
           <article class="work-card work-card--hero reveal" data-work="otsuyu">
             <div class="work-card__image image-shell">
-              <img src="assets/images/telegram-web/lilimillerdoll/232.webp" alt="Кукла Оцую" />
+              <img src="assets/images/telegram-web/lilimillerdoll/232.webp" alt="Кукла Оцую" data-i18n-alt="workOtsuyuAlt" />
             </div>
             <div class="work-card__meta">
               <div><span>01</span><span data-i18n="mythsJapan">Мифы Японии</span></div>
-              <h3>Оцую</h3>
-              <p>«Душа красной лилии» · 2025–2026</p>
+              <h3 data-i18n="workOtsuyu">Оцую</h3>
+              <p data-i18n="workOtsuyuSubtitle">«Душа красной лилии» · 2025–2026</p>
             </div>
-            <button class="work-card__open" type="button" aria-label="Открыть историю Оцую">
+            <button class="work-card__open" type="button" aria-label="Открыть историю Оцую" data-i18n-aria-label="openOtsuyu">
               <span aria-hidden="true">↗</span>
             </button>
           </article>
 
-          <article class="work-card work-card--tall reveal" data-work="lucrezia">
+          <article class="work-card work-card--tall reveal" data-work="lucrezia-borgia">
             <div class="work-card__image image-shell">
               <img
                 src="assets/images/telegram-web/lilimillerdoll/221.webp"
                 alt="Кукла Лукреция Борджиа"
+                data-i18n-alt="workLucreziaAlt"
               />
             </div>
             <div class="work-card__meta">
               <div><span>02</span><span data-i18n="renaissance">Женщины Возрождения</span></div>
-              <h3>Лукреция</h3>
+              <h3 data-i18n="workLucrezia">Лукреция</h3>
               <p data-i18n="porcelain2023">Фарфор · 2023 / 2026</p>
             </div>
-            <button class="work-card__open" type="button" aria-label="Открыть историю Лукреции">
+            <button class="work-card__open" type="button" aria-label="Открыть историю Лукреции" data-i18n-aria-label="openLucrezia">
               <span aria-hidden="true">↗</span>
             </button>
           </article>
 
-          <article class="work-card reveal" data-work="caterina">
+          <article class="work-card reveal" data-work="caterina-sforza">
             <div class="work-card__image image-shell">
-              <img src="assets/images/telegram-web/lilimillerdoll/90.webp" alt="Кукла Катерина Сфорца" />
+              <img src="assets/images/telegram-web/lilimillerdoll/90.webp" alt="Кукла Катерина Сфорца" data-i18n-alt="workCaterinaAlt" />
             </div>
             <div class="work-card__meta">
               <div><span>03</span><span data-i18n="renaissance">Женщины Возрождения</span></div>
-              <h3>Катерина</h3>
+              <h3 data-i18n="workCaterina">Катерина</h3>
               <p data-i18n="privateCollection">Фарфор · частная коллекция</p>
             </div>
-            <button class="work-card__open" type="button" aria-label="Открыть историю Катерины">
+            <button class="work-card__open" type="button" aria-label="Открыть историю Катерины" data-i18n-aria-label="openCaterina">
               <span aria-hidden="true">↗</span>
             </button>
           </article>
 
-          <article class="work-card reveal" data-work="contessina">
+          <article class="work-card reveal" data-work="contessina-de-bardi">
             <div class="work-card__image image-shell">
               <img
                 src="assets/images/telegram-web/lilimillerdoll/78.webp"
                 alt="Кукла Контессина де Барди"
+                data-i18n-alt="workContessinaAlt"
               />
             </div>
             <div class="work-card__meta">
               <div><span>04</span><span data-i18n="renaissance">Женщины Возрождения</span></div>
-              <h3>Контессина</h3>
+              <h3 data-i18n="workContessina">Контессина</h3>
               <p data-i18n="privateCollection">Фарфор · частная коллекция</p>
             </div>
-            <button class="work-card__open" type="button" aria-label="Открыть историю Контессины">
+            <button class="work-card__open" type="button" aria-label="Открыть историю Контессины" data-i18n-aria-label="openContessina">
               <span aria-hidden="true">↗</span>
             </button>
           </article>
@@ -269,7 +294,7 @@
 
       <section class="featured-story" id="story" aria-labelledby="story-title">
         <div class="featured-story__image image-shell reveal">
-          <img src="assets/images/telegram-web/lilimillerdoll/232.webp" alt="Оцую в красном платье" />
+          <img src="assets/images/telegram-web/lilimillerdoll/232.webp" alt="Оцую в красном платье" data-i18n-alt="storyImageAlt" />
           <div class="featured-story__number" aria-hidden="true">物語</div>
         </div>
         <div class="featured-story__content reveal">
@@ -318,12 +343,12 @@
           <article><span>03</span><h3 data-i18n="character">Характер</h3><p data-i18n="characterText">Костюм, поза и взгляд продолжают историю персонажа.</p></article>
         </div>
 
-        <div class="atelier-strip reveal" aria-label="Работы в мастерской">
-          <figure><img src="assets/images/telegram-web/douls-for-soul-site/633525.webp" alt="Сборка фарфоровой куклы в мастерской" loading="lazy" /></figure>
-          <figure><img src="assets/images/telegram-web/douls-for-soul-site/633526.webp" alt="Роспись фарфоровой руки" loading="lazy" /></figure>
-          <figure><img src="assets/images/telegram-web/douls-for-soul-site/633537.webp" alt="Материалы и детали будущего образа" loading="lazy" /></figure>
-          <figure><img src="assets/images/telegram-web/douls-for-soul-site/633531.webp" alt="Детали исторического костюма" loading="lazy" /></figure>
-          <figure><img src="assets/images/telegram-web/douls-for-soul-site/633595.webp" alt="Миниатюрные детали образа куклы" loading="lazy" /></figure>
+        <div class="atelier-strip reveal" aria-label="Работы в мастерской" data-i18n-aria-label="atelierLabel">
+          <figure><img src="assets/images/telegram-web/douls-for-soul-site/633525.webp" alt="Сборка фарфоровой куклы в мастерской" data-i18n-alt="processAltOne" loading="lazy" /></figure>
+          <figure><img src="assets/images/telegram-web/douls-for-soul-site/633526.webp" alt="Роспись фарфоровой руки" data-i18n-alt="processAltTwo" loading="lazy" /></figure>
+          <figure><img src="assets/images/telegram-web/douls-for-soul-site/633537.webp" alt="Материалы и детали будущего образа" data-i18n-alt="processAltThree" loading="lazy" /></figure>
+          <figure><img src="assets/images/telegram-web/douls-for-soul-site/633531.webp" alt="Детали исторического костюма" data-i18n-alt="processAltFour" loading="lazy" /></figure>
+          <figure><img src="assets/images/telegram-web/douls-for-soul-site/633595.webp" alt="Миниатюрные детали образа куклы" data-i18n-alt="processAltFive" loading="lazy" /></figure>
         </div>
       </section>
 
@@ -361,7 +386,7 @@
           </div>
         </div>
         <ol class="timeline reveal">
-          <li><time>2026</time><div><h3 data-i18n="event2026">Бал кукол в Санкт-Петербурге</h3><p>Севкабель Порт · 14–17 мая</p></div><span>↗</span></li>
+          <li><time>2026</time><div><h3 data-i18n="event2026">Бал кукол в Санкт-Петербурге</h3><p data-i18n="event2026Meta">Севкабель Порт · 14–17 мая</p></div><span>↗</span></li>
           <li><time>2025</time><div><h3 data-i18n="event2025">Выставочный маршрут Оцую</h3><p data-i18n="route2025">Москва → Шанхай</p></div><span>↗</span></li>
           <li><time>2023</time><div><h3 data-i18n="event2023">Премьера исторической коллекции</h3><p data-i18n="premiere2023">Бал кукол · Санкт-Петербург</p></div><span>↗</span></li>
         </ol>
@@ -389,7 +414,7 @@
     </main>
 
     <dialog class="work-dialog" data-dialog>
-      <button class="work-dialog__close" type="button" aria-label="Закрыть" data-dialog-close>×</button>
+      <button class="work-dialog__close" type="button" aria-label="Закрыть" data-i18n-aria-label="dialogClose" data-dialog-close>×</button>
       <div class="work-dialog__image image-shell"><img src="" alt="" data-dialog-image /></div>
       <div class="work-dialog__content">
         <p class="eyebrow" data-dialog-series></p>
@@ -397,9 +422,9 @@
         <p class="work-dialog__lead" data-dialog-lead></p>
         <p data-dialog-story></p>
         <dl>
-          <div><dt>Год</dt><dd data-dialog-year></dd></div>
-          <div><dt>Материал</dt><dd data-dialog-material></dd></div>
-          <div><dt>Статус</dt><dd data-dialog-status></dd></div>
+          <div><dt data-i18n="dialogYear">Год</dt><dd data-dialog-year></dd></div>
+          <div><dt data-i18n="dialogMaterial">Материал</dt><dd data-dialog-material></dd></div>
+          <div><dt data-i18n="dialogStatus">Статус</dt><dd data-dialog-status></dd></div>
         </dl>
       </div>
     </dialog>
