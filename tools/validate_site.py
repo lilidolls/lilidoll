@@ -13,6 +13,8 @@ from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_LANGUAGES = {"ru", "en", "zh-Hans", "x-default"}
+EXPECTED_NAVIGATION = ["catalog", "works", "stories", "artist", "exhibitions", "contact"]
+EXPECTED_LANGUAGE_SWITCH = ["ru", "en", "zh"]
 
 
 def image_dimensions(path: Path) -> tuple[int, int]:
@@ -108,6 +110,24 @@ def local_target(page: Path, value: str) -> Path | None:
     return target
 
 
+def validate_navigation(parser: PageParser, label: Path, errors: list[str]) -> None:
+    navigation = [
+        attrs.get("data-nav-key")
+        for tag, attrs in parser.tags
+        if tag == "a" and attrs.get("data-nav-key")
+    ]
+    if navigation != EXPECTED_NAVIGATION:
+        errors.append(f"{label}: inconsistent main navigation {navigation}")
+
+    language_switch = [
+        attrs.get("data-language-code")
+        for tag, attrs in parser.tags
+        if tag == "a" and attrs.get("data-language-code")
+    ]
+    if language_switch != EXPECTED_LANGUAGE_SWITCH:
+        errors.append(f"{label}: incomplete language switch {language_switch}")
+
+
 def validate_page(page: Path, image_assets: dict, errors: list[str]) -> None:
     if not page.is_file():
         errors.append(f"Missing page: {page.relative_to(ROOT)}")
@@ -141,6 +161,8 @@ def validate_page(page: Path, image_assets: dict, errors: list[str]) -> None:
 
     if source.count("ym(110756646, 'init'") != 1:
         errors.append(f"{label}: expected one Metrika initialization")
+
+    validate_navigation(parser, label, errors)
 
     for tag, attrs in parser.tags:
         attribute = "src" if tag in {"img", "script", "source"} else "href" if tag in {"a", "link"} else None
@@ -228,6 +250,11 @@ def main() -> None:
 
     for page in pages:
         validate_page(page, image_assets, errors)
+
+    legacy_work_page = ROOT / "work.html"
+    legacy_parser = PageParser()
+    legacy_parser.feed(legacy_work_page.read_text(encoding="utf-8"))
+    validate_navigation(legacy_parser, legacy_work_page.relative_to(ROOT), errors)
 
     for folder in (ROOT / "en", ROOT / "zh"):
         for page in folder.rglob("*.html"):

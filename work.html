@@ -79,14 +79,19 @@
       </button>
 
       <nav class="main-nav" id="main-navigation" aria-label="Основная навигация" data-menu>
-        <a href="catalog.html" aria-current="page">Каталог</a>
-        <a href="index.html#works">Избранное</a>
-        <a href="index.html#artist">Художник</a>
-        <a href="index.html#exhibitions">Выставки</a>
-        <a href="index.html#contact">Контакты</a>
+        <a href="catalog.html" data-nav-key="catalog" aria-current="page">Каталог</a>
+        <a href="index.html#works" data-nav-key="works">Работы</a>
+        <a href="index.html#story" data-nav-key="stories">Истории</a>
+        <a href="index.html#artist" data-nav-key="artist">Художник</a>
+        <a href="index.html#exhibitions" data-nav-key="exhibitions">Выставки</a>
+        <a href="index.html#contact" data-nav-key="contact">Контакты</a>
       </nav>
 
-      <span class="language-label" aria-label="Язык страницы: русский">RU</span>
+      <nav class="language-toggle" aria-label="Выбор языка">
+        <a href="/" lang="ru" data-language-code="ru" aria-current="page">RU</a><span>/</span>
+        <a href="/en/" lang="en" data-language-code="en">EN</a><span>/</span>
+        <a href="/zh/" lang="zh-Hans" data-language-code="zh">中文</a>
+      </nav>
     </header>
 
     <main id="main" class="work-page" data-work-root>
