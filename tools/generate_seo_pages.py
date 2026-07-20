@@ -128,7 +128,7 @@ def language_switch(language: str, page: str, i18n: dict, slug: str | None = Non
     for code, config in i18n["languages"].items():
         current = ' aria-current="page"' if code == language else ""
         items.append(
-            f'<a href="{page_path(code, page, i18n, slug)}" lang="{config["htmlLang"]}"{current}>{config["short"]}</a>'
+            f'<a href="{page_path(code, page, i18n, slug)}" lang="{config["htmlLang"]}" data-language-code="{code}"{current}>{config["short"]}</a>'
         )
     return (
         f'<nav class="language-toggle" aria-label="{escaped(common["languageNav"])}">'
@@ -607,11 +607,12 @@ def render_work_page(
         <span></span><span></span><span class="sr-only">{escaped(common['menuOpen'])}</span>
       </button>
       <nav class="main-nav" id="main-navigation" aria-label="{escaped(common['navLabel'])}" data-menu>
-        <a href="{page_path(language, 'catalog', i18n)}" aria-current="page">{escaped(common['navCatalog'])}</a>
-        <a href="{page_path(language, 'home', i18n)}#works">{escaped(common['navSelected'])}</a>
-        <a href="{page_path(language, 'home', i18n)}#artist">{escaped(common['navArtist'])}</a>
-        <a href="{page_path(language, 'home', i18n)}#exhibitions">{escaped(common['navExhibitions'])}</a>
-        <a href="{page_path(language, 'home', i18n)}#contact">{escaped(common['navContact'])}</a>
+        <a href="{page_path(language, 'catalog', i18n)}" data-nav-key="catalog" aria-current="page">{escaped(common['navCatalog'])}</a>
+        <a href="{page_path(language, 'home', i18n)}#works" data-nav-key="works">{escaped(common['navWorks'])}</a>
+        <a href="{page_path(language, 'home', i18n)}#story" data-nav-key="stories">{escaped(common['navStories'])}</a>
+        <a href="{page_path(language, 'home', i18n)}#artist" data-nav-key="artist">{escaped(common['navArtist'])}</a>
+        <a href="{page_path(language, 'home', i18n)}#exhibitions" data-nav-key="exhibitions">{escaped(common['navExhibitions'])}</a>
+        <a href="{page_path(language, 'home', i18n)}#contact" data-nav-key="contact">{escaped(common['navContact'])}</a>
       </nav>
       {language_switch(language, 'work', i18n, work['slug'])}
     </header>

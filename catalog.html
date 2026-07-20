@@ -148,17 +148,18 @@
       </button>
 
       <nav class="main-nav" id="main-navigation" aria-label="Основная навигация" data-i18n-aria-label="navLabel" data-menu>
-        <a href="catalog.html" aria-current="page" data-i18n="navCatalog">Каталог</a>
-        <a href="index.html#works" data-i18n="navSelected">Избранное</a>
-        <a href="index.html#artist" data-i18n="navArtist">Художник</a>
-        <a href="index.html#exhibitions" data-i18n="navExhibitions">Выставки</a>
-        <a href="index.html#contact" data-i18n="navContact">Контакты</a>
+        <a href="catalog.html" data-nav-key="catalog" aria-current="page" data-i18n="navCatalog">Каталог</a>
+        <a href="index.html#works" data-nav-key="works" data-i18n="navWorks">Работы</a>
+        <a href="index.html#story" data-nav-key="stories" data-i18n="navStories">Истории</a>
+        <a href="index.html#artist" data-nav-key="artist" data-i18n="navArtist">Художник</a>
+        <a href="index.html#exhibitions" data-nav-key="exhibitions" data-i18n="navExhibitions">Выставки</a>
+        <a href="index.html#contact" data-nav-key="contact" data-i18n="navContact">Контакты</a>
       </nav>
 
       <nav class="language-toggle" aria-label="Выбор языка" data-i18n-aria-label="languageNav">
-        <a href="/catalog.html" lang="ru" aria-current="page">RU</a><span>/</span>
-        <a href="/en/catalog.html" lang="en">EN</a><span>/</span>
-        <a href="/zh/catalog.html" lang="zh-Hans">中文</a>
+        <a href="/catalog.html" lang="ru" data-language-code="ru" aria-current="page">RU</a><span>/</span>
+        <a href="/en/catalog.html" lang="en" data-language-code="en">EN</a><span>/</span>
+        <a href="/zh/catalog.html" lang="zh-Hans" data-language-code="zh">中文</a>
       </nav>
     </header>
 

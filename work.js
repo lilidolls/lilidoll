@@ -43,6 +43,15 @@ function workPath(slug) {
   return `${LANGUAGE_PREFIX}/works/${encodeURIComponent(slug)}/`;
 }
 
+function updateLanguageLinks(slug) {
+  const prefixes = { ru: "", en: "/en", zh: "/zh" };
+  document.querySelectorAll("[data-language-code]").forEach((link) => {
+    const prefix = prefixes[link.dataset.languageCode];
+    if (prefix == null) return;
+    link.href = slug ? `${prefix}/works/${encodeURIComponent(slug)}/` : `${prefix}/` || "/";
+  });
+}
+
 function applyResponsiveImage(image, path, sizes) {
   const metadata = imageAssets.images?.[path];
   if (!metadata) return;
@@ -288,6 +297,7 @@ function renderError(message) {
 
 async function loadWork() {
   const slug = root?.dataset.workSlug || new URLSearchParams(window.location.search).get("slug");
+  updateLanguageLinks(slug);
 
   try {
     const [worksResponse, i18nResponse, imageAssetsResponse] = await Promise.all([
